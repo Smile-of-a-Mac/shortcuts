@@ -1,5 +1,5 @@
 [{
-"version":37,
-"url":"https://www.icloud.com/shortcuts/4e7baeda40a94b4e9e8bce9f5b29f84d",
-"update_content":"电池健康¹⁶ 3.0\n1.增加了查询电池温度、Qmax、电压等功能\n2.结果展示界面使用HTML完全重做\n3.查询流程改善"
+"version":38,
+"url":"https://www.icloud.com/shortcuts/43f1d249dc42411e85f96e69ef4cff17",
+"update_content":"电池健康¹⁶ 3.0.1\n1.在3.0版本的基础上修缮了一些文字描述\n2.删去了历史记录冗余的步骤"
 }]
