@@ -1,5 +1,5 @@
 [{
-"version":38,
-"url":"https://www.icloud.com/shortcuts/43f1d249dc42411e85f96e69ef4cff17",
-"update_content":"电池健康¹⁶ 3.0.1\n1.在3.0版本的基础上修缮了一些文字描述\n2.删去了历史记录冗余的步骤"
+"version":39,
+"url":"https://www.icloud.com/shortcuts/29dc64b760024c7784371e0b88db6b37",
+"update_content":"电池健康¹⁶ 3.0.2\n1.新增离线模式，方便无法使用自动更新的用户\n2.修复意外退出结果界面不能保存历史记录的问题"
 }]
