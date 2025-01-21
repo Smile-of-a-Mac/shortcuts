@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>帮助提示</title>
+		<title>教程答疑</title>
 	</head>
 	<style type="text/css">
 		/* @@@ */
@@ -16,69 +16,93 @@
 			height: 50px;
 			border: 1px green;
 			background-color: green;
-			border-radius: 7px;
-			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			border-radius: 10px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+		}
+		#float_container{
+			padding: 10px;
+			border-radius: 20px;
+			/* 添加阴影效果 */
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 		}
 	</style>
 	<body id="background">
 			<div class="page">
 						<div class="topbar">
-							<h1 style="color: white;font-size: 40px;">&ensp;电池健康¹⁶·帮助提示</h1>
+							<h1 style="color: white;font-size: 40px;">&ensp;电池健康¹⁶·教程答疑</h1>
 						</div>
 						<br>
+						<div id="float_container">
+							<h1>特别感谢</h1>
+							<p>在此请允许我再次感谢<a href="https://space.bilibili.com/16422613">夕眺舞伊</a>提供的容量信息和理论支持。</p>
+							<p>这里是他的<a href="https://m.tb.cn/h.5yMKdqaT5bvZWzX">淘宝店铺</a>。</p>
+						</div>
 						<br>
-						<h1>特别感谢</h1>
-						<p>在此请允许我再次感谢<a href="https://space.bilibili.com/16422613">夕眺舞伊</a>提供的容量信息和理论支持。</p>
-						<p>这里是他的<a href="https://m.tb.cn/h.5yMKdqaT5bvZWzX">淘宝店铺</a>。</p>
-						<hr>
+						<div id="float_container">
 						<h1>教程</h1>
-						<center><h2><a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d">完整视频教程</a></h2></center>
+						<center><h2><a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d">➡️点击跳转B站查看完整视频教程⬅️</a></h2></center>
 						<center>
-						<p>由于“快捷指令”app的限制，暂未发现在预览网页中使用b站外链播放器的方法，您可以点击标题来观看教程。</p>
+						<p>由于“快捷指令”app的限制，暂时无法在预览网页中使用b站外链播放器的方法，您可以点击标题来观看教程。</p>
 						</center>
+						</div>
 						<br>
+						<div id="float_container">
+							<h1>常见问题</h1>
+										<ul type="square">
+											<li><h2>找不到Analytics文件</h2></li>
+											<p>1.检查共享iPhone（或iPad）分析选项是否打开，若没有打开请打开。</p>
+											<p>2.如果打开了此选项依然搜索不到目标文件，请尝试还原所有设置并重新打开此选项，第二天上午8:00左右重新查询即可。</p>
+											<hr>
+											<li><h2>无法获取数据，请检查传入的文件是否正确</h2></li>
+											<p>1.您可能传入了错误的文件，检查您共享的文件是否正确。</p>
+											<hr>
+											<li><h2>共享菜单中选择捷径后没有结果，主菜单仍然显示</h2></li>
+											<p>1.此问题为iOS/iPadOS 16.0.x系统bug，后续系统版本仍可能出现，您需要重新打开设置app，一定要上划关闭后台，然后重试。</p>
+											<hr>
+											<li><h2>Beta版系统分析文件体积大可能导致运行超时的问题</h2></li>
+											<p>属于正常现象，目前暂无解决方案，您可以通过重新启动设备来尝试缓解此问题。</p>
+											<hr>
+											<li><h2>分析文件缺失关键数据</h2></li>
+											<p>如果您在生成文件时间的过去24小时中没有充电（也有可能为系统工作不正常），则分析文件中将不会保存实时电池数据。</p>
+											<hr>
+											<li><h2>关于捷径计算</h2></li>
+											<p>捷径计算的结果基于昨天08:00至今天08:00共24小时中记录的电池数据得出，与系统计算电池容量的算法有所不同，这些数据可能会受到环境气温、充电时间、充电设备的影响，故数值可能会出现浮动，属正常现象。</p>
+							<p>⚠️捷径数据中存储的各个机型的电池容量与设备电池硬件上标定的电池容量有所不同，原因是iOS并不以硬件上的容量计算电池效率。</p>
+											<hr>
+											<li><h2>关于总工作时间</h2></li>
+											<p>总工作时间是以电池连接到主板上的日期开始计算的，所以这个时间在一般情况下大于您使用设备的时间，若您的设备没有更换过电池，则此数据从设备的生产日期开始计算；若您的设备更换过电池（不包括移植电芯的情况），则此数据从更换新电池的日期开始计算。</p>
+										</ul>
+						</div>
 						<br>
-						<hr>
-						<h1>常见问题</h1>
-						<ul type="square">
-							<li><h2>找不到Analytics文件</h2></li>
-							<p>1.检查共享iPhone（或iPad）分析选项是否打开，若没有打开请打开。</p>
-							<p>2.如果打开了此选项依然搜索不到目标文件，请尝试还原所有设置并重新打开此选项，第二天上午8:00左右重新查询即可。</p>
-							<br>
-							<li><h2>无法获取数据，请检查传入的文件是否正确</h2></li>
-							<p>1.您可能传入了错误的文件，检查您共享的文件是否正确。</p>
-							<br>
-							<li><h2>共享菜单中选择捷径后没有结果，主菜单仍然显示</h2></li>
-							<p>1.此问题为iOS 16.0.x系统bug，您需要重新打开设置app，一定要上划关闭后台，然后重试。</p>
-							<br>
-							<li><h2>Beta版系统分析文件体积大可能导致运行超时的问题</h2></li>
-							<p>属于正常现象，目前暂无解决方案，但iOS 17 Beta似乎没有这个问题。</p>
-							<br>
-							<li><h2>分析文件缺失关键数据</h2></li>
-							<p>如果您在生成文件时间的过去24小时中没有充电，则分析文件中将不会保存实时电池数据。</p>
-							<br>
-							<li><h2>关于捷径计算</h2></li>
-							<p>捷径计算的结果基于昨天08:00至今天08:00共24小时中记录的电池数据得出，与系统计算电池容量的算法有所不同，这些数据可能会受到环境气温、充电时间、充电设备的影响，故数值可能会出现浮动，属正常现象。
-			⚠️捷径数据中存储的各个机型的电池容量与设备电池硬件上标定的电池容量有所不同，原因是iOS并不以硬件上的容量计算电池效率。</p>
-							<br>
-							<li><h2>关于总工作时间</h2></li>
-							<p>总工作时间是以电池连接到主板上的日期开始计算的，所以这个时间在一般情况下大于您使用设备的时间，若您的设备没有更换过电池，则此数据从设备的生产日期开始计算；若您的设备更换过电池（不包括移植电芯的情况），则此数据从更换新电池的日期开始计算。</p>
-			                <br>
-						</ul>
-						<hr>
-						<h1>贡献名单</h1>
-						<ul type="circle">
-							<li><p>夕眺舞伊（哔哩哔哩）：2017~2021发布的iPhone（iPhone 8～iPhone 13 Pro Max）所有机型的电池容量</p></li>
-							<li><p>Smile of a Mac：iPhone SE 3、iPhone 14 Pro、iPhone 12 mini、iPad Pro 2020 11-inch的容量</p></li>
-							<li><p>我是小兔崽汁（哔哩哔哩）：iPad 8的电池容量</p></li>
-							<li><p>你请输入新的昵称呢（哔哩哔哩）：iPad mini 6的电池容量</p></li>
-							<li><p>你不要乱来好不好（哔哩哔哩）：iPhone 15 Pro Max的电池容量</p></li>
-							<li><p>不看也会爆炸（酷安）：iPhone 15 Pro的电池容量</p></li>
-							<li><p>eason12345（酷安）：iPad Pro 2022 11-inch的电池容量</p></li>
-							<li><p>世辉耀（酷安）：为2.3.2版本的历史记录添加了复制功能</p></li>
-						</ul>
-						<hr>
-						<center><p>Copyright© Smile of a Mac 2022-2024</p></center>
+						<div id="float_container">
+							<h1>数据说明</h1>
+							<ul type="square">
+											<li><h2>Qmax容量</h2></li>
+											<p>Qmax是指预估电芯最大的化学容量。保护板会定期更新Qmax数值，并根据它和其他参数来计算电池的实际容量和满充容量。</p>
+											<p>在iPhone 13及以上机型中，当电池循环次数大于一千次或几百次且效率低于82%时会二次降压，此时会出现锁Qmax容量的机制。例如，iPhone 13的Qmax会锁在3504mAh等固定数值，导致电池效率无法恢复到100%，一般最多只能恢复到95%左右，且即使更换大容量电芯或多次循环，Qmax数值也不再上涨，从而限制了电池实际能发挥的容量。</p>
+											<hr>
+											<li><h2>满充容量</h2></li>
+											<p>满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值。在不同设备和电池体系中，满充容量的确定和表现有所不同。</p>
+											<p>在对电池容量进行研究和测试时，满充容量也是一个关键指标。在某些电池的测试中，发现存在满充容量参数设置错误导致剩余容量显示错误的情况，通过调整设计容量和满充容量等操作，使电池的相关数据如 SOC（剩余容量/满充容量）、COH（健康度）等恢复正常，满充容量的准确设置对于电池性能监测和使用具有重要意义。</p>
+										</ul>
+										<hr>
+										<p>作者声明：该部分内容来自互联网，由于作者并非电池方面的专业人士，无法考察其真实性，仅供参考。如有错误请通过酷安联系作者进行订正。</p>
+						</div>
+						<br>
+						<div id="float_container">
+							<h1>贡献名单</h1>
+							<ul type="circle">
+								<li><p>夕眺舞伊（哔哩哔哩）：2017~2021发布的iPhone（iPhone 8～iPhone 13 Pro Max）所有机型的电池容量</p></li>
+								<li><p>Smile of a Mac：iPhone SE 3、iPhone 14 Pro、iPhone 12 mini、iPad Pro 2020 11-inch的容量</p></li>
+								<li><p>我是小兔崽汁（哔哩哔哩）：iPad 8的电池容量</p></li>
+								<li><p>你请输入新的昵称呢（哔哩哔哩）：iPad mini 6的电池容量</p></li>
+								<li><p>你不要乱来好不好（哔哩哔哩）：iPhone 15 Pro Max的电池容量</p></li>
+								<li><p>不看也会爆炸（酷安）：iPhone 15 Pro的电池容量</p></li>
+								<li><p>eason12345（酷安）：iPad Pro 2022 11-inch的电池容量</p></li>
+								<li><p>世辉耀（酷安）：为2.3.2版本的历史记录添加了复制功能</p></li>
+							</ul>
+						</div>
+						<center><p>Copyright© Smile of a Mac 2022-2025</p></center>
 					</div>
 	</body>
 </html>
