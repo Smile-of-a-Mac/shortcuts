@@ -1,5 +1,5 @@
 [{
-"version":45,
-"url":"https://www.icloud.com/shortcuts/9cd5fd01621147379852f0d6eaa56eb9",
-"update_content":"电池健康¹⁶ 4.0.1\n1.修复了Apple Watch结果界面电池图标显示异常的问题\n2.修复了数据库无数据时结果界面电池图标显示异常的问题\n3.优化了外挂电池小板的提示"
+"version":46,
+"url":"https://www.icloud.com/shortcuts/caaac801f5234ec8b16cc4fb4909ed01",
+"update_content":"电池健康¹⁶ 4.1\n1.引入了全新风格的主菜单\n2.修复了电池icon“一柱擎天”的问题\n3.对子菜单进行了微调\n4.删除了数据库更新多余的联网步骤"
 }]
