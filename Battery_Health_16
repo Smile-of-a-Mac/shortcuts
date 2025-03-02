@@ -1,5 +1,5 @@
 [{
-"version":47,
-"url":"https://www.icloud.com/shortcuts/69325e1249664640a9b4489c0c8ec05f",
-"update_content":"电池健康¹⁶ 4.1.1\n1.引入了全新风格的主菜单\n2.修复了电池icon“一柱擎天”的问题\n3.对子菜单进行了微调\n4.删除了数据库更新多余的联网步骤"
+"version":50,
+"url":"https://www.icloud.com/shortcuts/167606677ac34eeea2ef2980baf5fc52",
+"update_content":"电池健康 Verge 5.0\n1.全新的类iOS原生结果展示界面\n2.全新的动态电池图标\n3.新增Gitee更新仓库\n4.包含已知Bug修复和其他改进"
 }]
