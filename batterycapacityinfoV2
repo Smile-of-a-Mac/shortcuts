@@ -1,7 +1,7 @@
 {
-    "version":24,
-    "up_info":"新增iPad mini (A17 Pro)的信息",
-    "up_date":"2025-02-23",
+    "version":25,
+    "up_info":"新增iPhone 16e的电池信息",
+    "up_date":"2025-04-09",
     "source":"Smile of a Mac",
     "iPhone10,1":1810,
     "iPhone10,4":1810,
@@ -90,8 +90,9 @@
     "iPad16,2":5015,
     "iPad16,3":8160,
     "iPad16,4":8160,
-	"iPhone17,1":3544,
-	"iPhone17,2":4630,
-	"iPhone17,3":3561,
-	"iPhone17,4":4674
+    "iPhone17,1":3544,
+    "iPhone17,2":4630,
+    "iPhone17,3":3561,
+    "iPhone17,4":4674,
+    "iPhone17,5":3961
 }
