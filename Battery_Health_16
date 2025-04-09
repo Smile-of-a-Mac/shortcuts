@@ -1,5 +1,5 @@
 [{
-"version":50,
-"url":"https://www.icloud.com/shortcuts/167606677ac34eeea2ef2980baf5fc52",
-"update_content":"电池健康 Verge 5.0\n1.全新的类iOS原生结果展示界面\n2.全新的动态电池图标\n3.新增Gitee更新仓库\n4.包含已知Bug修复和其他改进"
+"version":51,
+"url":"https://www.icloud.com/shortcuts/968e5336f9064a29b559cb19b2889f65",
+"update_content":"电池健康 Verge 5.1\n1.适配iOS 18.4及更新系统\n2.解决了20MB+的log文件分析超时的问题\n3.内置数据库增加了iPhone 16e\n4.包含已知Bug修复和其他改进"
 }]
