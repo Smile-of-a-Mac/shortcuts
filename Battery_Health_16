@@ -1,5 +1,5 @@
 {
-"version":52,
-"url":"https://www.icloud.com/shortcuts/b63ffbd35fdd42dfb40d65279de7de86",
-"update_content":"电池健康 Verge 5.2\n1.适配iOS 15\n2.解决了iOS 18.3.1及之前的系统版本可能会查询失败的问题\n3.内置数据库增加了iPhone6s/SE/7的信息\n4.包含已知Bug修复和其他改进"
+"version":53,
+"url":"https://www.icloud.com/shortcuts/f8e3d44b433d4d5ca66fc257ec0130fb",
+"update_content":"电池健康 Verge 5.2.1\n1.完善了电池图标，为图标加上了尖端。\n2.修复了修改电池信息后描述出错的问题。"
 }
