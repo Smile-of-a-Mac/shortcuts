@@ -1,209 +1,329 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>教程答疑</title>
+    <title>电池健康教程答疑</title>
     <style>
-		/* @@@ */
+        :root {
+            /* 浅色模式变量 */
+            --primary-color: #34C759;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --bg-color: #f2f2f7;
+            --card-bg: #ffffff;
+            --divider-color: #f2f2f7;
+            --shadow-color: rgba(0,0,0,0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* 深色模式变量 */
+                --text-primary: #ffffff;
+                --text-secondary: #8e8e93;
+                --bg-color: #000000;
+                --card-bg: #1c1c1e;
+                --divider-color: #2c2c2e;
+                --shadow-color: rgba(255,255,255,0.1);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 16px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            text-align: center;
+            padding: 12px 0;
+            margin: 0;
+        }
+
+        .subsection-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 12px 0;
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: var(--divider-color);
+            margin: 16px 0;
+        }
+
+        .battery-container {
+            width: 200px;
+            height: 100px;
+            border: 4px solid var(--primary-color);
+            border-radius: 20px;
+            position: relative;
+            margin: 20px auto;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            padding: 3px;
+        }
+
+        .battery-level {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            bottom: 3px;
+            width: 75%;
+            background: linear-gradient(90deg, #34C759, #37ef79);
+            border-radius: 14px;
+            transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+
+        .battery-tip {
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 30px;
+            background: var(--primary-color);
+            border-radius: 0 4px 4px 0;
+            box-shadow: 2px 0 4px var(--shadow-color);
+        }
+
+        .text-muted {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .highlight:hover {
+            opacity: 0.8;
+        }
+
+        .issue-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .issue-item {
+            padding: 12px 0;
+        }
+
+        .contributor-list {
+            padding: 0;
+            list-style: none;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 16px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .battery-container {
+                width: 180px;
+                height: 90px;
+            }
+
+            .battery-tip {
+                height: 25px;
+            }
+        }
     </style>
 </head>
-
 <body>
+    <!-- 原有HTML内容保持不变 -->
     <div class="container">
-        <!-- 顶部标题 -->
-        <div class="text-container" style="margin-top: 0;">
-            <h2 style="justify-content: center; font-size: 20px; padding: 8px 0;">
-                <span class="label">电池健康 Verge·教程答疑</span>
-            </h2>
-        </div>
+        <!-- 主标题 -->
+        <section class="card" style="margin-top: 0;">
+            <h1 class="section-title">电池健康 Verge·教程答疑</h1>
+        </section>
 
         <!-- 特别感谢 -->
-        <div class="text-container">
-            <h2>
-                <span class="label">特别感谢</span>
-            </h2>
-            <hr>
-            <p style="padding: 12px 0; color: #86868b; line-height: 1.6;">
+        <section class="card">
+            <h2 class="subsection-title">特别感谢</h2>
+            <hr class="divider">
+            <p class="text-muted">
                 在此请允许我再次感谢
-                <a href="https://space.bilibili.com/16422613" style="color: #34C759; text-decoration: none;">夕眺舞伊</a>
+                <a href="https://space.bilibili.com/16422613" class="highlight">夕眺舞伊</a>
                 提供的容量信息和理论支持。
             </p>
-            <p style="padding-bottom: 12px; color: #86868b;">
+            <p class="text-muted">
                 这里是他的
-                <a href="https://m.tb.cn/h.5yMKdqaT5bvZWzX" style="color: #34C759; text-decoration: none;">淘宝店铺</a>。
+                <a href="https://m.tb.cn/h.5yMKdqaT5bvZWzX" class="highlight">淘宝店铺</a>。
             </p>
-        </div>
+        </section>
 
         <!-- 教程模块 -->
-        <div class="text-container">
-            <h2>
-                <span class="label">教程</span>
-            </h2>
-            <hr>
-            <div style="text-align: center; padding: 16px 0;">
-                <h2 style="margin: 12px 0;">
-                    <a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d" 
-                       style="color: #34C759; text-decoration: none; font-weight: 500;">➡️点击跳转B站查看完整视频教程⬅️</a>
-                </h2>
-                <p style="color: #86868b; font-size: 14px; line-height: 1.5; padding: 0 20px;">
+        <section class="card">
+            <h2 class="subsection-title">教程</h2>
+            <hr class="divider">
+            <div style="text-align: center;">
+                <a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d"
+                   class="highlight" 
+                   style="display: block; margin: 16px 0;">
+                    ➡️点击跳转B站查看完整视频教程⬅️
+                </a>
+                <p class="text-muted">
                     由于“快捷指令”app的限制，暂时无法在预览网页中使用b站外链播放器的方法，您可以点击标题来观看教程。
                 </p>
             </div>
-        </div>
+        </section>
 
         <!-- 常见问题 -->
-        <div class="text-container">
-            <h2>
-                <span class="label">常见问题</span>
-            </h2>
-            <hr>
-            <ul style="list-style: none; padding-top: 12px;">
+        <section class="card">
+            <h2 class="subsection-title">常见问题</h2>
+            <hr class="divider">
+            <ul class="issue-list">
                 <!-- 问题1 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">找不到Analytics文件</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
+                <li class="issue-item">
+                    <h3 class="subsection-title">找不到Analytics文件</h3>
+                    <p class="text-muted">
                         1.检查共享iPhone（或iPad）分析选项是否打开，若没有打开请打开。<br>
                         2.如果打开了此选项依然搜索不到目标文件，请尝试还原所有设置并重新打开此选项，第二天上午8:00左右重新查询即可。
                     </p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 问题2 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">无法获取数据，请检查传入的文件是否正确</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
+                <li class="issue-item">
+                    <h3 class="subsection-title">无法获取数据，请检查传入的文件是否正确</h3>
+                    <p class="text-muted">
                         1.您可能传入了错误的文件，检查您共享的文件是否正确。
                     </p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 问题3 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">共享菜单中选择捷径后没有结果</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
+                <li class="issue-item">
+                    <h3 class="subsection-title">共享菜单中选择捷径后没有结果</h3>
+                    <p class="text-muted">
                         1.此问题为iOS/iPadOS 16.0.x系统bug，后续系统版本仍可能出现，您需要重新打开设置app，一定要上划关闭后台，然后重试。
                     </p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 问题4 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">Beta版系统分析文件体积大导致运行超时</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
+                <li class="issue-item">
+                    <h3 class="subsection-title">Beta版系统分析文件体积大导致运行超时</h3>
+                    <p class="text-muted">
                         属于正常现象，目前暂无解决方案，您可以通过重新启动设备来尝试缓解此问题。
                     </p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 问题5 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">分析文件缺失关键数据</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
+                <li class="issue-item">
+                    <h3 class="subsection-title">分析文件缺失关键数据</h3>
+                    <p class="text-muted">
                         如果您在生成文件时间的过去24小时中没有充电（也有可能为系统工作不正常），则分析文件中将不会保存实时电池数据。
                     </p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 问题6 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">关于捷径计算</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
-                        捷径计算的结果基于昨天08:00至今天08:00共24小时中记录的电池数据得出，与系统计算电池容量的算法有所不同...<br>
-                        ⚠️捷径数据中存储的各个机型的电池容量与设备电池硬件上标定的电池容量有所不同...
+                <li class="issue-item">
+                    <h3 class="subsection-title">关于捷径计算</h3>
+                    <p class="text-muted">
+                        捷径计算的结果基于昨天08:00至今天08:00共24小时中记录的电池数据得出，与系统计算电池容量的算法有所不同，这些数据可能会受到环境气温、充电时间、充电设备的影响，故数值可能会出现浮动，属正常现象。
                     </p>
+                    <p class="text-muted">⚠️捷径数据中存储的各个机型的电池容量与设备电池硬件上标定的电池容量有所不同，原因是iOS并不以硬件上的容量计算电池效率。</p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 问题7 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">关于总工作时间</h2>
-                    <p style="color: #86868b; padding: 8px 0 16px; line-height: 1.6;">
-                        总工作时间是以电池连接到主板上的日期开始计算的...若您的设备更换过电池（不包括移植电芯的情况）...
+                <li class="issue-item">
+                    <h3 class="subsection-title">关于总工作时间</h3>
+                    <p class="text-muted">
+                        总工作时间是以电池连接到主板上的日期开始计算的，所以这个时间在一般情况下大于您使用设备的时间，若您的设备没有更换过电池，则此数据从设备的生产日期开始计算；若您的设备更换过电池（不包括移植电芯的情况），则此数据从更换新电池的日期开始计算。
                     </p>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- 数据说明 -->
-        <div class="text-container">
-            <h2>
-                <span class="label">数据说明</span>
-            </h2>
-            <hr>
-            <ul style="list-style: none; padding-top: 12px;">
+        <section class="card">
+            <h2 class="subsection-title">数据说明</h2>
+            <hr class="divider">
+            <ul class="issue-list">
                 <!-- Qmax容量 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">Qmax容量</h2>
-                    <p style="color: #86868b; line-height: 1.6; padding: 8px 0;">
-                        Qmax是指预估电芯最大的化学容量。保护板会定期更新Qmax数值...<br>
-                        在iPhone 13及以上机型中，当电池循环次数大于一千次或几百次且效率低于82%时会二次降压...
+                <li class="issue-item">
+                    <h3 class="subsection-title">Qmax容量</h3>
+                    <p class="text-muted">
+                        Qmax是指预估电芯最大的化学容量。保护板会定期更新Qmax数值，并根据它和其他参数来计算电池的实际容量和满充容量。<br>
+                        在iPhone 13及以上机型中，当电池循环次数大于一千次或几百次且效率低于82%时会二次降压，此时会出现锁Qmax容量的机制。例如，iPhone
+                        13的Qmax会锁在3504mAh等固定数值，导致电池效率无法恢复到100%，一般最多只能恢复到95%左右，且即使更换大容量电芯或多次循环，Qmax数值也不再上涨，从而限制了电池实际能发挥的容量。
                     </p>
                 </li>
-                <hr style="margin: 16px -24px;">
+                <hr class="divider">
 
                 <!-- 满充容量 -->
-                <li style="padding: 12px 0;">
-                    <h2 class="label">满充容量</h2>
-                    <p style="color: #86868b; line-height: 1.6; padding: 8px 0;">
-                        满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值...<br>
-                        在对电池容量进行研究和测试时，发现存在满充容量参数设置错误导致剩余容量显示错误的情况...
+                <li class="issue-item">
+                    <h3 class="subsection-title">满充容量</h3>
+                    <p class="text-muted">
+                        满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值。在不同设备和电池体系中，满充容量的确定和表现有所不同。<br>
+                        在对电池容量进行研究和测试时，满充容量也是一个关键指标。在某些电池的测试中，发现存在满充容量参数设置错误导致剩余容量显示错误的情况，通过调整设计容量和满充容量等操作，使电池的相关数据如
+                        SOC（剩余容量/满充容量）、COH（健康度）等恢复正常，满充容量的准确设置对于电池性能监测和使用具有重要意义。
                     </p>
                 </li>
             </ul>
-            <hr>
-            <p style="color: #86868b; font-size: 14px; padding-top: 12px;">
+            <hr class="divider">
+            <p class="text-muted" style="font-size: 14px;">
                 作者声明：该部分内容来自互联网，由于作者并非电池领域的专业人士，无法考察其真实性，仅供参考。如有错误请通过酷安联系作者进行订正。
             </p>
-        </div>
+        </section>
 
         <!-- 贡献名单 -->
-        <div class="text-container">
-            <h2>
-                <span class="label">贡献名单</span>
-            </h2>
-            <hr>
-            <ul style="padding: 12px 0 0; list-style: none;">
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">夕眺舞伊（哔哩哔哩）：2017~2021发布的iPhone（iPhone 8～iPhone 13 Pro Max）所有机型的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">Smile of a Mac：iPhone SE 3、iPhone 14 Pro、iPhone 12 mini、iPad Pro 2020 11-inch的容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">我是小兔崽汁（哔哩哔哩）：iPad 8的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">你请输入新的昵称呢（哔哩哔哩）：iPad mini 6的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">你不要乱来好不好（哔哩哔哩）：iPhone 15 Pro Max的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">不看也会爆炸（酷安）：iPhone 15 Pro的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">eason12345（酷安）：iPad Pro 2022 11-inch的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">世辉耀（酷安）：为2.3.2版本的历史记录添加了复制功能</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">黑夜丶（酷安）：iPhone 16 Pro的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">铁盒的序已变成了日記（酷安）：iPhone 16 Pro Max的电池容量</p>
-                </li>
-                <li style="padding: 8px 0;">
-                    <p style="color: #86868b; line-height: 1.6;">寻南觅北（酷安）：iPad mini (A17 Pro)的电池容量</p>
-                </li>
+        <section class="card">
+            <h2 class="subsection-title">贡献名单</h2>
+            <hr class="divider">
+            <ul class="contributor-list">
+                <li class="text-muted">夕眺舞伊（哔哩哔哩）：2017~2021发布的iPhone（iPhone 8～iPhone 13 Pro Max）所有机型的电池容量</li>
+                <li class="text-muted">Smile of a Mac：iPhone SE 3、iPhone 14 Pro、iPhone 12 mini、iPad Pro 2020 11-inch的容量</li>
+                <li class="text-muted">我是小兔崽汁（哔哩哔哩）：iPad 8的电池容量</li>
+                <li class="text-muted">你请输入新的昵称呢（哔哩哔哩）：iPad mini 6的电池容量</li>
+                <li class="text-muted">你不要乱来好不好（哔哩哔哩）：iPhone 15 Pro Max的电池容量</li>
+                <li class="text-muted">不看也会爆炸（酷安）：iPhone 15 Pro的电池容量</li>
+                <li class="text-muted">eason12345（酷安）：iPad Pro 2022 11-inch的电池容量</li>
+                <li class="text-muted">世辉耀（酷安）：为2.3.2版本的历史记录添加了复制功能</li>
+                <li class="text-muted">黑夜丶（酷安）：iPhone 16 Pro的电池容量</li>
+                <li class="text-muted">铁盒的序已变成了日記（酷安）：iPhone 16 Pro Max的电池容量</li>
+                <li class="text-muted">寻南觅北（酷安）：iPad mini (A17 Pro)的电池容量</li>
             </ul>
-        </div>
+        </section>
 
-        <div style="text-align: center; color: #86868b; font-size: 12px; margin-top: 20px; padding: 16px 0;">
+        <!-- 页脚 -->
+        <footer class="text-muted" style="text-align: center; padding: 20px 0;">
             Copyright© Smile of a Mac 2022 - 2025
-        </div>
+        </footer>
     </div>
 </body>
 </html>
