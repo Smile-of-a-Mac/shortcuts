@@ -141,6 +141,10 @@
             list-style: none;
         }
 
+        p {
+            text-indent: 2em;
+        }
+
         @media (max-width: 480px) {
             .container {
                 padding: 16px;
@@ -187,15 +191,52 @@
         <section class="card">
             <h2 class="subsection-title">教程</h2>
             <hr class="divider">
-            <div style="text-align: center;">
-                <a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d"
-                    class="highlight" style="display: block; margin: 16px 0;">
-                    ➡️点击跳转B站查看完整视频教程⬅️
-                </a>
+            <div>
+                <div style="text-align: center;">
+                    <a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d"
+                        class="highlight" style="display: block; margin: 16px 0;">
+                        ➡️点击跳转B站查看完整视频教程⬅️
+                    </a>
+                </div>
                 <p class="text-muted">
                     由于“快捷指令”app的限制，暂时无法在预览网页中使用b站外链播放器的方法，您可以点击标题来观看教程。
                 </p>
             </div>
+        </section>
+
+        <!-- 数据说明 -->
+        <section class="card">
+            <h2 class="subsection-title">数据说明</h2>
+            <hr class="divider">
+            <ul class="issue-list">
+                <!-- Qmax容量 -->
+                <li class="issue-item">
+                    <h3 class="subsection-title">Qmax容量</h3>
+                    <p class="text-muted">
+                        Qmax是指预估电芯最大的化学容量。保护板会定期更新Qmax数值，并根据它和其他参数来计算电池的实际容量和满充容量。
+                    </p>
+                    <p class="text-muted">在iPhone 13及以上机型中，当电池循环次数大于一千次或几百次且效率低于82%时会二次降压，此时会出现锁Qmax容量的机制。例如，iPhone
+                        13的Qmax会锁在3504mAh等固定数值，导致电池效率无法恢复到100%，一般最多只能恢复到95%左右，且即使更换大容量电芯或多次循环，Qmax数值也不再上涨，从而限制了电池实际能发挥的容量。
+                    </p>
+                </li>
+                <hr class="divider">
+
+                <!-- 满充容量 -->
+                <li class="issue-item">
+                    <h3 class="subsection-title">满充容量</h3>
+                    <p class="text-muted">
+                        满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值。在不同设备和电池体系中，满充容量的确定和表现有所不同。
+                    </p>
+                    <p class="text-muted">
+                        在对电池容量进行研究和测试时，满充容量也是一个关键指标。在某些电池的测试中，发现存在满充容量参数设置错误导致剩余容量显示错误的情况，通过调整设计容量和满充容量等操作，使电池的相关数据如
+                        SOC（剩余容量/满充容量）、COH（健康度）等恢复正常，满充容量的准确设置对于电池性能监测和使用具有重要意义。
+                    </p>
+                </li>
+            </ul>
+            <hr class="divider">
+            <p style="font-size: 14px; text-indent: 0em;">
+                ⚠️作者声明：该部分内容来自互联网，由于作者并非电池领域的专业人士，无法考察其真实性，仅供参考。如有错误请通过酷安联系作者进行订正。
+            </p>
         </section>
 
         <!-- 常见问题 -->
@@ -233,15 +274,6 @@
 
                 <!-- 问题4 -->
                 <li class="issue-item">
-                    <h3 class="subsection-title">Beta版系统分析文件体积大导致运行超时</h3>
-                    <p class="text-muted">
-                        属于正常现象，目前暂无解决方案，您可以通过重新启动设备来尝试缓解此问题。
-                    </p>
-                </li>
-                <hr class="divider">
-
-                <!-- 问题5 -->
-                <li class="issue-item">
                     <h3 class="subsection-title">分析文件缺失关键数据</h3>
                     <p class="text-muted">
                         如果您在生成文件时间的过去24小时中没有充电（也有可能为系统工作不正常），则分析文件中将不会保存实时电池数据。
@@ -249,7 +281,7 @@
                 </li>
                 <hr class="divider">
 
-                <!-- 问题6 -->
+                <!-- 问题5 -->
                 <li class="issue-item">
                     <h3 class="subsection-title">关于捷径计算</h3>
                     <p class="text-muted">
@@ -259,7 +291,7 @@
                 </li>
                 <hr class="divider">
 
-                <!-- 问题7 -->
+                <!-- 问题6 -->
                 <li class="issue-item">
                     <h3 class="subsection-title">关于总工作时间</h3>
                     <p class="text-muted">
@@ -267,38 +299,6 @@
                     </p>
                 </li>
             </ul>
-        </section>
-
-        <!-- 数据说明 -->
-        <section class="card">
-            <h2 class="subsection-title">数据说明</h2>
-            <hr class="divider">
-            <ul class="issue-list">
-                <!-- Qmax容量 -->
-                <li class="issue-item">
-                    <h3 class="subsection-title">Qmax容量</h3>
-                    <p class="text-muted">
-                        Qmax是指预估电芯最大的化学容量。保护板会定期更新Qmax数值，并根据它和其他参数来计算电池的实际容量和满充容量。<br>
-                        在iPhone 13及以上机型中，当电池循环次数大于一千次或几百次且效率低于82%时会二次降压，此时会出现锁Qmax容量的机制。例如，iPhone
-                        13的Qmax会锁在3504mAh等固定数值，导致电池效率无法恢复到100%，一般最多只能恢复到95%左右，且即使更换大容量电芯或多次循环，Qmax数值也不再上涨，从而限制了电池实际能发挥的容量。
-                    </p>
-                </li>
-                <hr class="divider">
-
-                <!-- 满充容量 -->
-                <li class="issue-item">
-                    <h3 class="subsection-title">满充容量</h3>
-                    <p class="text-muted">
-                        满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值。在不同设备和电池体系中，满充容量的确定和表现有所不同。<br>
-                        在对电池容量进行研究和测试时，满充容量也是一个关键指标。在某些电池的测试中，发现存在满充容量参数设置错误导致剩余容量显示错误的情况，通过调整设计容量和满充容量等操作，使电池的相关数据如
-                        SOC（剩余容量/满充容量）、COH（健康度）等恢复正常，满充容量的准确设置对于电池性能监测和使用具有重要意义。
-                    </p>
-                </li>
-            </ul>
-            <hr class="divider">
-            <p class="text-muted" style="font-size: 14px;">
-                ⚠️作者声明：该部分内容来自互联网，由于作者并非电池领域的专业人士，无法考察其真实性，仅供参考。如有错误请通过酷安联系作者进行订正。
-            </p>
         </section>
 
         <!-- 贡献名单 -->
