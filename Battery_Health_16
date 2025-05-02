@@ -1,5 +1,5 @@
 {
-"version":53,
-"url":"https://www.icloud.com/shortcuts/f8e3d44b433d4d5ca66fc257ec0130fb",
-"update_content":"电池健康 Verge 5.2.1\n1.完善了电池图标，为图标加上了尖端。\n2.修复了修改电池信息后描述出错的问题。"
+"version":54,
+"url":"https://www.icloud.com/shortcuts/0ee02b5cc4b747a1b49a9043c9c0456e",
+"update_content":"电池健康 Verge 5.3\n1.深色模式调整为HTML响应式方案\n2.取消了Gitee更新镜像\n3.修复了部分iOS 17设备无法查询的问题\n4.修正了iPhone 16的容量信息"
 }
