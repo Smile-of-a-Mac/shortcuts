@@ -1,0 +1,414 @@
+{
+    "version": 29,
+    "up_info": "全新的数据结构现已推出",
+    "up_date": "2025-05-17",
+    "source": "Smile of a Mac",
+    "iPhone8,1": {
+        "capacity": 1690,
+        "name": "iPhone 6s"
+    },
+    "iPhone8,2": {
+        "capacity": 2710,
+        "name": "iPhone 6s Plus"
+    },
+    "iPhone8,4": {
+        "capacity": 1600,
+        "name": "iPhone SE (1st generation)"
+    },
+    "iPhone9,1": {
+        "capacity": 1932,
+        "name": "iPhone 7"
+    },
+    "iPhone9,3": {
+        "capacity": 1932,
+        "name": "iPhone 7"
+    },
+    "iPhone9,2": {
+        "capacity": 2860,
+        "name": "iPhone 7 Plus"
+    },
+    "iPhone9,4": {
+        "capacity": 2860,
+        "name": "iPhone 7 Plus"
+    },
+    "iPhone10,1": {
+        "capacity": 1810,
+        "name": "iPhone 8"
+    },
+    "iPhone10,4": {
+        "capacity": 1810,
+        "name": "iPhone 8"
+    },
+    "iPhone10,2": {
+        "capacity": 2675,
+        "name": "iPhone 8 Plus"
+    },
+    "iPhone10,5": {
+        "capacity": 2675,
+        "name": "iPhone 8 Plus"
+    },
+    "iPhone10,3": {
+        "capacity": 2701,
+        "name": "iPhone X (Global)"
+    },
+    "iPhone10,6": {
+        "capacity": 2701,
+        "name": "iPhone X (GSM)"
+    },
+    "iPhone11,2": {
+        "capacity": 2642,
+        "name": "iPhone XS"
+    },
+    "iPhone11,4": {
+        "capacity": 3156,
+        "name": "iPhone XS Max"
+    },
+    "iPhone11,6": {
+        "capacity": 3156,
+        "name": "iPhone XS Max (Global)"
+    },
+    "iPhone11,8": {
+        "capacity": 2942,
+        "name": "iPhone XR"
+    },
+    "iPhone12,1": {
+        "capacity": 3092,
+        "name": "iPhone 11"
+    },
+    "iPhone12,3": {
+        "capacity": 2642,
+        "name": "iPhone 11 Pro"
+    },
+    "iPhone12,5": {
+        "capacity": 3943,
+        "name": "iPhone 11 Pro Max"
+    },
+    "iPhone12,8": {
+        "capacity": 1810,
+        "name": "iPhone SE (2nd generation)"
+    },
+    "iPhone13,1": {
+        "capacity": 2214,
+        "name": "iPhone 12 mini"
+    },
+    "iPhone13,2": {
+        "capacity": 2798,
+        "name": "iPhone 12"
+    },
+    "iPhone13,3": {
+        "capacity": 2798,
+        "name": "iPhone 12 Pro"
+    },
+    "iPhone13,4": {
+        "capacity": 3666,
+        "name": "iPhone 12 Pro Max"
+    },
+    "iPhone14,4": {
+        "capacity": 2391,
+        "name": "iPhone 13 mini"
+    },
+    "iPhone14,5": {
+        "capacity": 3208,
+        "name": "iPhone 13"
+    },
+    "iPhone14,2": {
+        "capacity": 3076,
+        "name": "iPhone 13 Pro"
+    },
+    "iPhone14,3": {
+        "capacity": 4325,
+        "name": "iPhone 13 Pro Max"
+    },
+    "iPhone14,6": {
+        "capacity": 2007,
+        "name": "iPhone SE (3rd generation)"
+    },
+    "iPhone14,7": {
+        "capacity": 3259,
+        "name": "iPhone 14"
+    },
+    "iPhone14,8": {
+        "capacity": 4299,
+        "name": "iPhone 14 Plus"
+    },
+    "iPhone15,4": {
+        "capacity": 3282,
+        "name": "iPhone 15"
+    },
+    "iPhone15,5": {
+        "capacity": 4295,
+        "name": "iPhone 15 Plus"
+    },
+    "iPhone15,2": {
+        "capacity": 3181,
+        "name": "iPhone 14 Pro"
+    },
+    "iPhone15,3": {
+        "capacity": 4297,
+        "name": "iPhone 14 Pro Max"
+    },
+    "iPhone16,1": {
+        "capacity": 3254,
+        "name": "iPhone 15 Pro"
+    },
+    "iPhone16,2": {
+        "capacity": 4395,
+        "name": "iPhone 15 Pro Max"
+    },
+    "iPhone17,1": {
+        "capacity": 3544,
+        "name": "iPhone 16 Pro"
+    },
+    "iPhone17,2": {
+        "capacity": 4630,
+        "name": "iPhone 16 Pro Max"
+    },
+    "iPhone17,3": {
+        "capacity": 3521,
+        "name": "iPhone 16"
+    },
+    "iPhone17,4": {
+        "capacity": 4620,
+        "name": "iPhone 16 Plus"
+    },
+    "iPhone17,5": {
+        "capacity": 3961,
+        "name": "iPhone 16e"
+    },
+    "iPad6,7": {
+        "capacity": 10307,
+        "name": "iPad Pro (12.9-inch, 1st generation)"
+    },
+    "iPad6,8": {
+        "capacity": 10307,
+        "name": "iPad Pro (12.9-inch, 1st generation)"
+    },
+    "iPad6,3": {
+        "capacity": 7306,
+        "name": "iPad Pro (9.7-inch, 1st generation)"
+    },
+    "iPad6,4": {
+        "capacity": 7306,
+        "name": "iPad Pro (9.7-inch, 1st generation)"
+    },
+    "iPad6,11": {
+        "capacity": 8557,
+        "name": "iPad (5th generation)"
+    },
+    "iPad6,12": {
+        "capacity": 8557,
+        "name": "iPad (5th generation)"
+    },
+    "iPad7,1": {
+        "capacity": 10875,
+        "name": "iPad Pro (12.9-inch, 2nd generation)"
+    },
+    "iPad7,2": {
+        "capacity": 10875,
+        "name": "iPad Pro (12.9-inch, 2nd generation)"
+    },
+    "iPad7,3": {
+        "capacity": 7810,
+        "name": "iPad Pro (10.5-inch)"
+    },
+    "iPad7,4": {
+        "capacity": 7810,
+        "name": "iPad Pro (10.5-inch)"
+    },
+    "iPad7,5": {
+        "capacity": 8557,
+        "name": "iPad (6th generation)"
+    },
+    "iPad7,6": {
+        "capacity": 8557,
+        "name": "iPad (6th generation)"
+    },
+    "iPad7,11": {
+        "capacity": 8557,
+        "name": "iPad (7th generation)"
+    },
+    "iPad7,12": {
+        "capacity": 8557,
+        "name": "iPad (7th generation)"
+    },
+    "iPad8,1": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation)"
+    },
+    "iPad8,2": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation, 1 TB)"
+    },
+    "iPad8,3": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation, Wi-Fi + Cellular)"
+    },
+    "iPad8,4": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation, 1 TB Wi-Fi + Cellular)"
+    },
+    "iPad8,5": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation)"
+    },
+    "iPad8,6": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation, 1 TB)"
+    },
+    "iPad8,7": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation, Wi-Fi + Cellular)"
+    },
+    "iPad8,8": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation, 1 TB Wi-Fi + Cellular)"
+    },
+    "iPad8,9": {
+        "capacity": 9332,
+        "name": "iPad Pro (11-inch, 4th generation)"
+    },
+    "iPad8,10": {
+        "capacity": 9332,
+        "name": "iPad Pro (11-inch, 4th generation, Wi-Fi + Cellular)"
+    },
+    "iPad8,11": {
+        "capacity": 9332,
+        "name": "iPad Pro (12.9-inch, 4th generation)"
+    },
+    "iPad8,12": {
+        "capacity": 9332,
+        "name": "iPad Pro (12.9-inch, 4th generation, Wi-Fi + Cellular)"
+    },
+    "iPad11,1": {
+        "capacity": 5124,
+        "name": "iPad mini (5th generation)"
+    },
+    "iPad11,2": {
+        "capacity": 5124,
+        "name": "iPad mini (5th generation)"
+    },
+    "iPad11,3": {
+        "capacity": 8134,
+        "name": "iPad Air (3rd generation)"
+    },
+    "iPad11,4": {
+        "capacity": 8134,
+        "name": "iPad Air (3rd generation)"
+    },
+    "iPad11,6": {
+        "capacity": 8557,
+        "name": "iPad (8th generation)"
+    },
+    "iPad11,7": {
+        "capacity": 8557,
+        "name": "iPad (8th generation)"
+    },
+    "iPad12,1": {
+        "capacity": 8557,
+        "name": "iPad (9th generation)"
+    },
+    "iPad12,2": {
+        "capacity": 8557,
+        "name": "iPad (9th generation)"
+    },
+    "iPad13,1": {
+        "capacity": 7544,
+        "name": "iPad Air (4th generation)"
+    },
+    "iPad13,2": {
+        "capacity": 7544,
+        "name": "iPad Air (4th generation)"
+    },
+    "iPad13,4": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 5th generation)"
+    },
+    "iPad13,5": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 5th generation)"
+    },
+    "iPad13,6": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 5th generation)"
+    },
+    "iPad13,7": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 5th generation)"
+    },
+    "iPad13,8": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,9": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,10": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,11": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,16": {
+        "capacity": 7544,
+        "name": "iPad Air (5th generation)"
+    },
+    "iPad13,17": {
+        "capacity": 7544,
+        "name": "iPad Air (5th generation)"
+    },
+    "iPad13,18": {
+        "capacity": 7606,
+        "name": "iPad mini (6th generation)"
+    },
+    "iPad13,19": {
+        "capacity": 7606,
+        "name": "iPad mini (6th generation)"
+    },
+    "iPad14,1": {
+        "capacity": 5034,
+        "name": "iPad mini (7th generation)"
+    },
+    "iPad14,2": {
+        "capacity": 5034,
+        "name": "iPad mini (7th generation)"
+    },
+    "iPad14,3": {
+        "capacity": 7596,
+        "name": "iPad Pro (11-inch, 4th generation)"
+    },
+    "iPad14,4": {
+        "capacity": 7596,
+        "name": "iPad Pro (11-inch, 4th generation)"
+    },
+    "iPad14,5": {
+        "capacity": 10566,
+        "name": "iPad Pro (12.9-inch, 6th generation)"
+    },
+    "iPad14,6": {
+        "capacity": 10566,
+        "name": "iPad Pro (12.9-inch, 6th generation)"
+    },
+    "iPad14,7": {
+        "capacity": 8524,
+        "name": "iPad (10th generation, Wi-Fi)"
+    },
+    "iPad14,8": {
+        "capacity": 8524,
+        "name": "iPad (10th generation, Wi-Fi + Cellular)"
+    },
+    "iPad16,2": {
+        "capacity": 5015,
+        "name": "iPad Air (6th generation)"
+    },
+    "iPad16,3": {
+        "capacity": 8160,
+        "name": "iPad Pro (13-inch, M4, Wi-Fi)"
+    },
+    "iPad16,4": {
+        "capacity": 8160,
+        "name": "iPad Pro (13-inch, M4, Wi-Fi + Cellular)"
+    }
+}
