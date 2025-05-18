@@ -1,7 +1,7 @@
 {
-    "version": 29,
-    "up_info": "全新的数据结构现已推出",
-    "up_date": "2025-05-17",
+    "version": 30,
+    "up_info": "修复了一些iPad的名称问题（还没修完，累死我了）",
+    "up_date": "2025-05-18",
     "source": "Smile of a Mac",
     "iPhone8,1": {
         "capacity": 1690,
@@ -175,22 +175,6 @@
         "capacity": 3961,
         "name": "iPhone 16e"
     },
-    "iPad6,7": {
-        "capacity": 10307,
-        "name": "iPad Pro (12.9-inch, 1st generation)"
-    },
-    "iPad6,8": {
-        "capacity": 10307,
-        "name": "iPad Pro (12.9-inch, 1st generation)"
-    },
-    "iPad6,3": {
-        "capacity": 7306,
-        "name": "iPad Pro (9.7-inch, 1st generation)"
-    },
-    "iPad6,4": {
-        "capacity": 7306,
-        "name": "iPad Pro (9.7-inch, 1st generation)"
-    },
     "iPad6,11": {
         "capacity": 8557,
         "name": "iPad (5th generation)"
@@ -198,22 +182,6 @@
     "iPad6,12": {
         "capacity": 8557,
         "name": "iPad (5th generation)"
-    },
-    "iPad7,1": {
-        "capacity": 10875,
-        "name": "iPad Pro (12.9-inch, 2nd generation)"
-    },
-    "iPad7,2": {
-        "capacity": 10875,
-        "name": "iPad Pro (12.9-inch, 2nd generation)"
-    },
-    "iPad7,3": {
-        "capacity": 7810,
-        "name": "iPad Pro (10.5-inch)"
-    },
-    "iPad7,4": {
-        "capacity": 7810,
-        "name": "iPad Pro (10.5-inch)"
     },
     "iPad7,5": {
         "capacity": 8557,
@@ -231,70 +199,6 @@
         "capacity": 8557,
         "name": "iPad (7th generation)"
     },
-    "iPad8,1": {
-        "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation)"
-    },
-    "iPad8,2": {
-        "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation, 1 TB)"
-    },
-    "iPad8,3": {
-        "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation, Wi-Fi + Cellular)"
-    },
-    "iPad8,4": {
-        "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation, 1 TB Wi-Fi + Cellular)"
-    },
-    "iPad8,5": {
-        "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation)"
-    },
-    "iPad8,6": {
-        "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation, 1 TB)"
-    },
-    "iPad8,7": {
-        "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation, Wi-Fi + Cellular)"
-    },
-    "iPad8,8": {
-        "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation, 1 TB Wi-Fi + Cellular)"
-    },
-    "iPad8,9": {
-        "capacity": 9332,
-        "name": "iPad Pro (11-inch, 4th generation)"
-    },
-    "iPad8,10": {
-        "capacity": 9332,
-        "name": "iPad Pro (11-inch, 4th generation, Wi-Fi + Cellular)"
-    },
-    "iPad8,11": {
-        "capacity": 9332,
-        "name": "iPad Pro (12.9-inch, 4th generation)"
-    },
-    "iPad8,12": {
-        "capacity": 9332,
-        "name": "iPad Pro (12.9-inch, 4th generation, Wi-Fi + Cellular)"
-    },
-    "iPad11,1": {
-        "capacity": 5124,
-        "name": "iPad mini (5th generation)"
-    },
-    "iPad11,2": {
-        "capacity": 5124,
-        "name": "iPad mini (5th generation)"
-    },
-    "iPad11,3": {
-        "capacity": 8134,
-        "name": "iPad Air (3rd generation)"
-    },
-    "iPad11,4": {
-        "capacity": 8134,
-        "name": "iPad Air (3rd generation)"
-    },
     "iPad11,6": {
         "capacity": 8557,
         "name": "iPad (8th generation)"
@@ -311,53 +215,21 @@
         "capacity": 8557,
         "name": "iPad (9th generation)"
     },
-    "iPad13,1": {
-        "capacity": 7544,
-        "name": "iPad Air (4th generation)"
+    "iPad14,7": {
+        "capacity": 8524,
+        "name": "iPad (10th generation)"
     },
-    "iPad13,2": {
-        "capacity": 7544,
-        "name": "iPad Air (4th generation)"
+    "iPad14,8": {
+        "capacity": 8524,
+        "name": "iPad (10th generation)"
     },
-    "iPad13,4": {
-        "capacity": 7569,
-        "name": "iPad Pro (11-inch, 5th generation)"
+    "iPad11,1": {
+        "capacity": 5124,
+        "name": "iPad mini (5th generation)"
     },
-    "iPad13,5": {
-        "capacity": 7569,
-        "name": "iPad Pro (11-inch, 5th generation)"
-    },
-    "iPad13,6": {
-        "capacity": 7569,
-        "name": "iPad Pro (11-inch, 5th generation)"
-    },
-    "iPad13,7": {
-        "capacity": 7569,
-        "name": "iPad Pro (11-inch, 5th generation)"
-    },
-    "iPad13,8": {
-        "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
-    },
-    "iPad13,9": {
-        "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
-    },
-    "iPad13,10": {
-        "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
-    },
-    "iPad13,11": {
-        "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
-    },
-    "iPad13,16": {
-        "capacity": 7544,
-        "name": "iPad Air (5th generation)"
-    },
-    "iPad13,17": {
-        "capacity": 7544,
-        "name": "iPad Air (5th generation)"
+    "iPad11,2": {
+        "capacity": 5124,
+        "name": "iPad mini (5th generation)"
     },
     "iPad13,18": {
         "capacity": 7606,
@@ -375,6 +247,94 @@
         "capacity": 5034,
         "name": "iPad mini (7th generation)"
     },
+    "iPad11,3": {
+        "capacity": 8134,
+        "name": "iPad Air (3rd generation)"
+    },
+    "iPad11,4": {
+        "capacity": 8134,
+        "name": "iPad Air (3rd generation)"
+    },
+    "iPad13,1": {
+        "capacity": 7544,
+        "name": "iPad Air (4th generation)"
+    },
+    "iPad13,2": {
+        "capacity": 7544,
+        "name": "iPad Air (4th generation)"
+    },
+    "iPad13,16": {
+        "capacity": 7544,
+        "name": "iPad Air (5th generation)"
+    },
+    "iPad13,17": {
+        "capacity": 7544,
+        "name": "iPad Air (5th generation)"
+    },
+    "iPad16,1": {
+        "capacity": 5015,
+        "name": "iPad mini (A17 Pro)"
+    },
+    "iPad16,2": {
+        "capacity": 5015,
+        "name": "iPad mini (A17 Pro)"
+    },
+    "iPad6,3": {
+        "capacity": 7306,
+        "name": "iPad Pro (9.7-inch)"
+    },
+    "iPad6,4": {
+        "capacity": 7306,
+        "name": "iPad Pro (9.7-inch)"
+    },
+    "iPad7,3": {
+        "capacity": 7810,
+        "name": "iPad Pro (10.5-inch)"
+    },
+    "iPad7,4": {
+        "capacity": 7810,
+        "name": "iPad Pro (10.5-inch)"
+    },
+    "iPad8,1": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation)"
+    },
+    "iPad8,2": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation)"
+    },
+    "iPad8,3": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation)"
+    },
+    "iPad8,4": {
+        "capacity": 7534,
+        "name": "iPad Pro (11-inch, 1st generation)"
+    },
+    "iPad8,9": {
+        "capacity": 9332,
+        "name": "iPad Pro (11-inch, 2nd generation)"
+    },
+    "iPad8,10": {
+        "capacity": 9332,
+        "name": "iPad Pro (11-inch, 2nd generation)"
+    },
+    "iPad13,4": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 3rd generation)"
+    },
+    "iPad13,5": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 3rd generation)"
+    },
+    "iPad13,6": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 3rd generation)"
+    },
+    "iPad13,7": {
+        "capacity": 7569,
+        "name": "iPad Pro (11-inch, 3rd generation)"
+    },
     "iPad14,3": {
         "capacity": 7596,
         "name": "iPad Pro (11-inch, 4th generation)"
@@ -382,6 +342,62 @@
     "iPad14,4": {
         "capacity": 7596,
         "name": "iPad Pro (11-inch, 4th generation)"
+    },
+    "iPad6,7": {
+        "capacity": 10307,
+        "name": "iPad Pro (12.9-inch, 1st generation)"
+    },
+    "iPad6,8": {
+        "capacity": 10307,
+        "name": "iPad Pro (12.9-inch, 1st generation)"
+    },
+    "iPad7,1": {
+        "capacity": 10875,
+        "name": "iPad Pro (12.9-inch, 2nd generation)"
+    },
+    "iPad7,2": {
+        "capacity": 10875,
+        "name": "iPad Pro (12.9-inch, 2nd generation)"
+    },
+    "iPad8,5": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation)"
+    },
+    "iPad8,6": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation)"
+    },
+    "iPad8,7": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation)"
+    },
+    "iPad8,8": {
+        "capacity": 9720,
+        "name": "iPad Pro (12.9-inch, 3rd generation)"
+    },
+    "iPad8,11": {
+        "capacity": 9332,
+        "name": "iPad Pro (12.9-inch, 4th generation)"
+    },
+    "iPad8,12": {
+        "capacity": 9332,
+        "name": "iPad Pro (12.9-inch, 4th generation)"
+    },
+    "iPad13,8": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,9": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,10": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
+    },
+    "iPad13,11": {
+        "capacity": 10486,
+        "name": "iPad Pro (12.9-inch, 5th generation)"
     },
     "iPad14,5": {
         "capacity": 10566,
@@ -391,24 +407,12 @@
         "capacity": 10566,
         "name": "iPad Pro (12.9-inch, 6th generation)"
     },
-    "iPad14,7": {
-        "capacity": 8524,
-        "name": "iPad (10th generation, Wi-Fi)"
-    },
-    "iPad14,8": {
-        "capacity": 8524,
-        "name": "iPad (10th generation, Wi-Fi + Cellular)"
-    },
-    "iPad16,2": {
-        "capacity": 5015,
-        "name": "iPad Air (6th generation)"
-    },
     "iPad16,3": {
-        "capacity": 8160,
-        "name": "iPad Pro (13-inch, M4, Wi-Fi)"
+        "capacity": 10080,
+        "name": "iPad Pro (13-inch, M4)"
     },
     "iPad16,4": {
-        "capacity": 8160,
-        "name": "iPad Pro (13-inch, M4, Wi-Fi + Cellular)"
+        "capacity": 10080,
+        "name": "iPad Pro (13-inch, M4)"
     }
 }
