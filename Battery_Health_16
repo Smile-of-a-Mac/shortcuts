@@ -1,5 +1,5 @@
 {
-"version":56,
-"url":"https://www.icloud.com/shortcuts/53e0d6ed054e4bacb66fc714babe3c53",
-"update_content":"电池健康 Verge 5.4\n1.机型名称显示机制回归\n2.修复了在早期iOS 15设备无法匹配到电池信息的问题\n3.缩小了电池图标的尺寸，现在可以显示更多内容\n4.更换了“关于捷径”和“检查更新”的图标"
+"version":57,
+"url":"https://www.icloud.com/shortcuts/b3a32b3b8b1f4a4a94d2994a55261f55",
+"update_content":"电池健康 Verge 5.4.1\n1.修正了机型选择中iPhone 14的识别代号"
 }
