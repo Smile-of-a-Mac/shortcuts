@@ -1,0 +1,118 @@
+{
+    "version": 1,
+    "iPhone": {
+        "iPhone 16系列": {
+            "iPhone 16": "iPhone17,3",
+            "iPhone 16 Plus": "iPhone17,4",
+            "iPhone 16 Pro": "iPhone17,1",
+            "iPhone 16 Pro Max": "iPhone17,2",
+            "iPhone 16e": "iPhone17,5"
+        },
+        "iPhone 15系列": {
+            "iPhone 15": "iPhone15,4",
+            "iPhone 15 Plus": "iPhone15,5",
+            "iPhone 15 Pro": "iPhone16,1",
+            "iPhone 15 Pro Max": "iPhone16,2"
+        },
+        "iPhone 14系列": {
+            "iPhone 14": "iPhone14,7",
+            "iPhone 14 Plus": "iPhone14,8",
+            "iPhone 14 Pro": "iPhone15,2",
+            "iPhone 14 Pro Max": "iPhone15,3"
+        },
+        "iPhone 13系列": {
+            "iPhone 13 mini": "iPhone14,4",
+            "iPhone 13": "iPhone14,5",
+            "iPhone 13 Pro": "iPhone14,2",
+            "iPhone 13 Pro Max": "iPhone14,3"
+        },
+        "iPhone 12系列": {
+            "iPhone 12 mini": "iPhone13,1",
+            "iPhone 12": "iPhone13,2",
+            "iPhone 12 Pro": "iPhone13,3",
+            "iPhone 12 Pro Max": "iPhone13,4"
+        },
+        "iPhone 11系列": {
+            "iPhone 11": "iPhone12,1",
+            "iPhone 11 Pro": "iPhone12,3",
+            "iPhone 11 Pro Max": "iPhone12,5"
+        },
+        "iPhone XS系列": {
+            "iPhone XR": "iPhone11,8",
+            "iPhone XS": "iPhone11,2",
+            "iPhone XS Max": "iPhone11,6"
+        },
+        "iPhone SE系列": {
+            "iPhone SE (2nd generation)": "iPhone12,8",
+            "iPhone SE (3rd generation)": "iPhone14,6"
+        }
+    },
+    "iPad": {
+        "iPad (第7代)": {
+            "iPad (7th Gen) Wi‑Fi": "iPad7,11",
+            "iPad (7th Gen) Wi‑Fi+Cellular": "iPad7,12"
+        },
+        "iPad (第8代)": {
+            "iPad (8th Gen) Wi‑Fi": "iPad11,6",
+            "iPad (8th Gen) Wi‑Fi+Cellular": "iPad11,7"
+        },
+        "iPad (第9代)": {
+            "iPad (9th Gen) Wi‑Fi": "iPad12,1",
+            "iPad (9th Gen) Wi‑Fi+Cellular": "iPad12,2"
+        },
+        "iPad (第10代)": {
+            "iPad (10th Gen) Wi‑Fi": "iPad13,18",
+            "iPad (10th Gen) Wi‑Fi+Cellular": "iPad13,19"
+        },
+        "iPad (第11代)": {
+            "iPad (11th Gen) Wi‑Fi": "iPad15,7",
+            "iPad (11th Gen) Wi‑Fi+Cellular": "iPad15,8"
+        },
+        "iPad Air 系列": {
+            "iPad Air (第3代) Wi‑Fi": "iPad11,3",
+            "iPad Air (第3代) Wi‑Fi+Cellular": "iPad11,4",
+            "iPad Air (第4代) Wi‑Fi": "iPad13,1",
+            "iPad Air (第4代) Wi‑Fi+Cellular": "iPad13,2",
+            "iPad Air (第5代) Wi‑Fi": "iPad13,16",
+            "iPad Air (第5代) Wi‑Fi+Cellular": "iPad13,17",
+            "iPad Air 11-inch (M2) Wi‑Fi": "iPad14,8",
+            "iPad Air 11-inch (M2) Wi‑Fi+Cellular": "iPad14,9",
+            "iPad Air 13-inch (M2) Wi‑Fi": "iPad14,10",
+            "iPad Air 13-inch (M2) Wi‑Fi+Cellular": "iPad14,11",
+            "iPad Air 11-inch (M3) Wi‑Fi": "iPad15,3",
+            "iPad Air 11-inch (M3) Wi‑Fi+Cellular": "iPad15,4",
+            "iPad Air 13-inch (M3) Wi‑Fi": "iPad15,5",
+            "iPad Air 13-inch (M3) Wi‑Fi+Cellular": "iPad15,6"
+        },
+        "iPad mini 系列": {
+            "iPad mini (5th gen) Wi‑Fi": "iPad11,1",
+            "iPad mini (5th gen) Wi‑Fi+Cellular": "iPad11,2",
+            "iPad mini (6th gen) Wi‑Fi": "iPad14,1",
+            "iPad mini (6th gen) Wi‑Fi+Cellular": "iPad14,2",
+            "iPad mini (A17 Pro) Wi‑Fi": "iPad16,1",
+            "iPad mini (A17 Pro) Wi‑Fi+Cellular": "iPad16,2"
+        },
+        "iPad Pro 系列": {
+            "iPad Pro 11-inch (第1代) Wi‑Fi": "iPad8,1",
+            "iPad Pro 11-inch (第1代) Wi‑Fi+Cellular": "iPad8,2",
+            "iPad Pro 11-inch (第2代) Wi‑Fi": "iPad8,9",
+            "iPad Pro 11-inch (第2代) Wi‑Fi+Cellular": "iPad8,10",
+            "iPad Pro 11-inch (第3代) Wi‑Fi": "iPad13,4",
+            "iPad Pro 11-inch (第3代) Wi‑Fi+Cellular": "iPad13,5",
+            "iPad Pro 11-inch (第4代) Wi‑Fi": "iPad14,3",
+            "iPad Pro 11-inch (第4代) Wi‑Fi+Cellular": "iPad14,4",
+            "iPad Pro 11-inch (M4) Wi‑Fi": "iPad16,3",
+            "iPad Pro 11-inch (M4) Wi‑Fi+Cellular": "iPad16,4",
+            "iPad Pro 12.9-inch (第3代) Wi‑Fi": "iPad8,5",
+            "iPad Pro 12.9-inch (第3代) Wi‑Fi+Cellular": "iPad8,6",
+            "iPad Pro 12.9-inch (第4代) Wi‑Fi": "iPad8,11",
+            "iPad Pro 12.9-inch (第4代) Wi‑Fi+Cellular": "iPad8,12",
+            "iPad Pro 12.9-inch (第5代) Wi‑Fi": "iPad13,8",
+            "iPad Pro 12.9-inch (第5代) Wi‑Fi+Cellular": "iPad13,9",
+            "iPad Pro 12.9-inch (第6代) Wi‑Fi": "iPad14,5",
+            "iPad Pro 12.9-inch (第6代) Wi‑Fi+Cellular": "iPad14,6",
+            "iPad Pro 13-inch (M4) Wi‑Fi": "iPad16,5",
+            "iPad Pro 13-inch (M4) Wi‑Fi+Cellular": "iPad16,6"
+        }
+    }
+}
