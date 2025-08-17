@@ -12,8 +12,8 @@
             --text-primary: #1d1d1f;
             --text-secondary: #86868b;
             --bg-color: #f2f2f7;
-            --card-bg: #ffffff;
-            --divider-color: #f2f2f7;
+            --card-bg: rgba(255, 255, 255, 0.55);
+            --divider-color: rgba(0,0,0,0.1);
             --shadow-color: rgba(0, 0, 0, 0.1);
         }
 
@@ -23,7 +23,7 @@
                 --bg-color: #121212;
                 --text-primary: #fff;
                 --text-secondary: #b2b2b6;
-                --card-bg: #222222;
+                --card-bg: rgba(255, 255, 255, 0.08);
                 --divider-color: #333333;
                 --shadow-color: rgba(0, 0, 0, 0.5);
             }
@@ -49,11 +49,16 @@
         }
 
         .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 2px 8px var(--shadow-color);
-            margin-bottom: 20px;
+            width: 100%;
+            /* 充满容器，居中子元素 */
+            background: var(--card-bg-light);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            backdrop-filter: blur(20px) saturate(180%);
+            box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.25), 0 6px 18px var(--shadow-color);
+            transition: all 0.4s ease;
         }
 
         .section-title {
@@ -73,40 +78,6 @@
             height: 1px;
             background: var(--divider-color);
             margin: 16px 0;
-        }
-
-        .battery-container {
-            width: 200px;
-            height: 100px;
-            border: 4px solid var(--primary-color);
-            border-radius: 20px;
-            position: relative;
-            margin: 20px auto;
-            box-shadow: 0 2px 8px var(--shadow-color);
-            padding: 3px;
-        }
-
-        .battery-level {
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            bottom: 3px;
-            width: 75%;
-            background: linear-gradient(90deg, #34C759, #37ef79);
-            border-radius: 14px;
-            transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
-        }
-
-        .battery-tip {
-            position: absolute;
-            right: -8px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 6px;
-            height: 30px;
-            background: var(--primary-color);
-            border-radius: 0 4px 4px 0;
-            box-shadow: 2px 0 4px var(--shadow-color);
         }
 
         .text-muted {
@@ -151,21 +122,11 @@
             .card {
                 padding: 20px;
             }
-
-            .battery-container {
-                width: 180px;
-                height: 90px;
-            }
-
-            .battery-tip {
-                height: 25px;
-            }
         }
     </style>
 </head>
 
 <body>
-    <!-- 原有HTML内容保持不变 -->
     <div class="container">
         <!-- 主标题 -->
         <h1 class="section-title" style="text-align: left; font-size: 48px;">教程帮助</h1>
@@ -259,7 +220,7 @@
                 </li>
             </ul>
         </section>
-        
+
         <!-- 数据说明 -->
         <section class="card">
             <h2 class="section-title">数据说明</h2>
@@ -269,10 +230,11 @@
                 <li class="issue-item">
                     <h3 class="subsection-title">Qmax容量</h3>
                     <p class="text-muted">
-                        Qmax是指预估电芯最大的化学容量。保护板会定期更新Qmax数值，并根据它和其他参数来计算电池的实际容量和满充容量。
+                        Qmax是电芯最大化学容量的预估值。保护板会定期更新该数值，并协同其他参数计算电池的实际容量与满充容量。
                     </p>
-                    <p class="text-muted">在iPhone 13及以上机型中，当电池循环次数大于一千次或几百次且效率低于82%时会二次降压，此时会出现锁Qmax容量的机制。例如，iPhone
-                        13的Qmax会锁在3504mAh等固定数值，导致电池效率无法恢复到100%，一般最多只能恢复到95%左右，且即使更换大容量电芯或多次循环，Qmax数值也不再上涨，从而限制了电池实际能发挥的容量。
+                    <p class="text-muted">
+                        在iPhone 13及以上机型中，当电池循环次数超过一千次，或循环次数为数百次且效率低于82%时，将触发二次降压，同时启用Qmax容量锁定机制。以iPhone
+                        13为例，其Qmax会被锁定在3504mAh等固定数值，这直接导致电池效率无法恢复至100%，通常最高仅能恢复至95%左右；即便更换大容量电芯或经多次充放电循环，Qmax数值也不再上升，从而限制了电池实际可发挥的容量。
                     </p>
                 </li>
                 <hr class="divider">
