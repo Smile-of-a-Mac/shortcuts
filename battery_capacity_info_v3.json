@@ -1,7 +1,7 @@
 {
-    "version": 30,
-    "up_info": "修复了一些iPad的名称问题（还没修完，累死我了）",
-    "up_date": "2025-05-18",
+    "version": 31,
+    "up_info": "新增了最近发布的iPad机型，修正了一些iPad的名称",
+    "up_date": "2025-08-21",
     "source": "Smile of a Mac",
     "iPhone8,1": {
         "capacity": 1690,
@@ -177,242 +177,274 @@
     },
     "iPad6,11": {
         "capacity": 8557,
-        "name": "iPad (5th generation)"
+        "name": "iPad (5th generation) (Wi-Fi)"
     },
     "iPad6,12": {
         "capacity": 8557,
-        "name": "iPad (5th generation)"
+        "name": "iPad (5th generation) (Wi-Fi+Cellular)"
     },
     "iPad7,5": {
         "capacity": 8557,
-        "name": "iPad (6th generation)"
+        "name": "iPad (6th generation) (Wi-Fi)"
     },
     "iPad7,6": {
         "capacity": 8557,
-        "name": "iPad (6th generation)"
+        "name": "iPad (6th generation) (Wi-Fi+Cellular)"
     },
     "iPad7,11": {
         "capacity": 8557,
-        "name": "iPad (7th generation)"
+        "name": "iPad (7th generation) (Wi-Fi)"
     },
     "iPad7,12": {
         "capacity": 8557,
-        "name": "iPad (7th generation)"
+        "name": "iPad (7th generation) (Wi-Fi+Cellular)"
     },
     "iPad11,6": {
         "capacity": 8557,
-        "name": "iPad (8th generation)"
+        "name": "iPad (8th generation) (Wi-Fi)"
     },
     "iPad11,7": {
         "capacity": 8557,
-        "name": "iPad (8th generation)"
+        "name": "iPad (8th generation) (Wi-Fi+Cellular)"
     },
     "iPad12,1": {
         "capacity": 8557,
-        "name": "iPad (9th generation)"
+        "name": "iPad (9th generation) (Wi-Fi)"
     },
     "iPad12,2": {
         "capacity": 8557,
-        "name": "iPad (9th generation)"
-    },
-    "iPad14,7": {
-        "capacity": 8524,
-        "name": "iPad (10th generation)"
-    },
-    "iPad14,8": {
-        "capacity": 8524,
-        "name": "iPad (10th generation)"
+        "name": "iPad (9th generation) (Wi-Fi+Cellular)"
     },
     "iPad11,1": {
         "capacity": 5124,
-        "name": "iPad mini (5th generation)"
+        "name": "iPad mini (5th generation) (Wi-Fi)"
     },
     "iPad11,2": {
         "capacity": 5124,
-        "name": "iPad mini (5th generation)"
+        "name": "iPad mini (5th generation) (Wi-Fi+Cellular)"
     },
     "iPad13,18": {
         "capacity": 7606,
-        "name": "iPad mini (6th generation)"
+        "name": "iPad (10th generation) (Wi-Fi)"
     },
     "iPad13,19": {
         "capacity": 7606,
-        "name": "iPad mini (6th generation)"
+        "name": "iPad (10th generation) (Wi-Fi+Cellular)"
     },
     "iPad14,1": {
         "capacity": 5034,
-        "name": "iPad mini (7th generation)"
+        "name": "iPad mini (6th generation) (Wi-Fi)"
     },
     "iPad14,2": {
         "capacity": 5034,
-        "name": "iPad mini (7th generation)"
+        "name": "iPad mini (6th generation) (Wi-Fi+Cellular)"
     },
     "iPad11,3": {
         "capacity": 8134,
-        "name": "iPad Air (3rd generation)"
+        "name": "iPad Air (3rd generation) (Wi-Fi)"
     },
     "iPad11,4": {
         "capacity": 8134,
-        "name": "iPad Air (3rd generation)"
+        "name": "iPad Air (3rd generation) (Wi-Fi+Cellular)"
     },
     "iPad13,1": {
         "capacity": 7544,
-        "name": "iPad Air (4th generation)"
+        "name": "iPad Air (4th generation) (Wi-Fi)"
     },
     "iPad13,2": {
         "capacity": 7544,
-        "name": "iPad Air (4th generation)"
+        "name": "iPad Air (4th generation) (Wi-Fi+Cellular)"
     },
     "iPad13,16": {
         "capacity": 7544,
-        "name": "iPad Air (5th generation)"
+        "name": "iPad Air (5th generation) (Wi-Fi)"
     },
     "iPad13,17": {
         "capacity": 7544,
-        "name": "iPad Air (5th generation)"
+        "name": "iPad Air (5th generation) (Wi-Fi+Cellular)"
     },
     "iPad16,1": {
         "capacity": 5015,
-        "name": "iPad mini (A17 Pro)"
+        "name": "iPad mini (A17 Pro) (Wi-Fi)"
     },
     "iPad16,2": {
         "capacity": 5015,
-        "name": "iPad mini (A17 Pro)"
+        "name": "iPad mini (A17 Pro) (Wi-Fi+Cellular)"
     },
     "iPad6,3": {
         "capacity": 7306,
-        "name": "iPad Pro (9.7-inch)"
+        "name": "iPad Pro (9.7-inch) (Wi-Fi)"
     },
     "iPad6,4": {
         "capacity": 7306,
-        "name": "iPad Pro (9.7-inch)"
+        "name": "iPad Pro (9.7-inch) (Wi-Fi+Cellular)"
     },
     "iPad7,3": {
         "capacity": 7810,
-        "name": "iPad Pro (10.5-inch)"
+        "name": "iPad Pro (10.5-inch) (Wi-Fi)"
     },
     "iPad7,4": {
         "capacity": 7810,
-        "name": "iPad Pro (10.5-inch)"
+        "name": "iPad Pro (10.5-inch) (Wi-Fi+Cellular)"
     },
     "iPad8,1": {
         "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation)"
+        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi)"
     },
     "iPad8,2": {
         "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation)"
+        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi+Cellular)"
     },
     "iPad8,3": {
         "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation)"
+        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi)"
     },
     "iPad8,4": {
         "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation)"
+        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi+Cellular)"
     },
     "iPad8,9": {
         "capacity": 9332,
-        "name": "iPad Pro (11-inch, 2nd generation)"
+        "name": "iPad Pro (11-inch, 2nd generation) (Wi-Fi)"
     },
     "iPad8,10": {
         "capacity": 9332,
-        "name": "iPad Pro (11-inch, 2nd generation)"
+        "name": "iPad Pro (11-inch, 2nd generation) (Wi-Fi+Cellular)"
     },
     "iPad13,4": {
         "capacity": 7569,
-        "name": "iPad Pro (11-inch, 3rd generation)"
+        "name": "iPad Pro (11-inch, 3rd generation) (Wi-Fi)"
     },
     "iPad13,5": {
         "capacity": 7569,
-        "name": "iPad Pro (11-inch, 3rd generation)"
+        "name": "iPad Pro (11-inch, 3rd generation) (Wi-Fi+Cellular)"
     },
     "iPad13,6": {
         "capacity": 7569,
-        "name": "iPad Pro (11-inch, 3rd generation)"
+        "name": "iPad Pro (11-inch, 3rd generation) (Wi-Fi)"
     },
     "iPad13,7": {
         "capacity": 7569,
-        "name": "iPad Pro (11-inch, 3rd generation)"
+        "name": "iPad Pro (11-inch, 3rd generation) (Wi-Fi+Cellular)"
     },
     "iPad14,3": {
         "capacity": 7596,
-        "name": "iPad Pro (11-inch, 4th generation)"
+        "name": "iPad Pro (11-inch, 4th generation) (Wi-Fi)"
     },
     "iPad14,4": {
         "capacity": 7596,
-        "name": "iPad Pro (11-inch, 4th generation)"
+        "name": "iPad Pro (11-inch, 4th generation) (Wi-Fi+Cellular)"
     },
     "iPad6,7": {
         "capacity": 10307,
-        "name": "iPad Pro (12.9-inch, 1st generation)"
+        "name": "iPad Pro (12.9-inch, 1st generation) (Wi-Fi)"
     },
     "iPad6,8": {
         "capacity": 10307,
-        "name": "iPad Pro (12.9-inch, 1st generation)"
+        "name": "iPad Pro (12.9-inch, 1st generation) (Wi-Fi+Cellular)"
     },
     "iPad7,1": {
         "capacity": 10875,
-        "name": "iPad Pro (12.9-inch, 2nd generation)"
+        "name": "iPad Pro (12.9-inch, 2nd generation) (Wi-Fi)"
     },
     "iPad7,2": {
         "capacity": 10875,
-        "name": "iPad Pro (12.9-inch, 2nd generation)"
+        "name": "iPad Pro (12.9-inch, 2nd generation) (Wi-Fi+Cellular)"
     },
     "iPad8,5": {
         "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation)"
+        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi)"
     },
     "iPad8,6": {
         "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation)"
+        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi+Cellular)"
     },
     "iPad8,7": {
         "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation)"
+        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi)"
     },
     "iPad8,8": {
         "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation)"
+        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi+Cellular)"
     },
     "iPad8,11": {
         "capacity": 9332,
-        "name": "iPad Pro (12.9-inch, 4th generation)"
+        "name": "iPad Pro (12.9-inch, 4th generation) (Wi-Fi)"
     },
     "iPad8,12": {
         "capacity": 9332,
-        "name": "iPad Pro (12.9-inch, 4th generation)"
+        "name": "iPad Pro (12.9-inch, 4th generation) (Wi-Fi+Cellular)"
     },
     "iPad13,8": {
         "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
+        "name": "iPad Pro (12.9-inch, 5th generation) (Wi-Fi)"
     },
     "iPad13,9": {
         "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
+        "name": "iPad Pro (12.9-inch, 5th generation) (Wi-Fi+Cellular)"
     },
     "iPad13,10": {
         "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
+        "name": "iPad Pro (12.9-inch, 5th generation (Wi-Fi))"
     },
     "iPad13,11": {
         "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation)"
+        "name": "iPad Pro (12.9-inch, 5th generation) (Wi-Fi+Cellular)"
     },
     "iPad14,5": {
         "capacity": 10566,
-        "name": "iPad Pro (12.9-inch, 6th generation)"
+        "name": "iPad Pro (12.9-inch, 6th generation) (Wi-Fi)"
     },
     "iPad14,6": {
         "capacity": 10566,
-        "name": "iPad Pro (12.9-inch, 6th generation)"
+        "name": "iPad Pro (12.9-inch, 6th generation) (Wi-Fi+Cellular)"
+    },
+    "iPad14,8": {
+        "capacity": 7606,
+        "name": "iPad Air 11-inch (M2) (Wi-Fi)"
+    },
+    "iPad14,9": {
+        "capacity": 7606,
+        "name": "iPad Air 11-inch (M2) (Wi-Fi+Cellular)"
+    },
+    "iPad14,11": {
+        "capacity": 10340,
+        "name": "iPad Air 13-inch (M2) (Wi-Fi)"
+    },
+    "iPad14,12": {
+        "capacity": 10340,
+        "name": "iPad Air 13-inch (M2) (Wi-Fi+Cellular)"
+    },
+    "iPad15,3": {
+        "capacity": 7613,
+        "name": "iPad Air 11-inch (M3) (Wi-Fi)"
+    },
+    "iPad15,4": {
+        "capacity": 7613,
+        "name": "iPad Air 11-inch (M3) (Wi-Fi+Cellular)"
+    },
+    "iPad15,5": {
+        "capacity": 9629,
+        "name": "iPad Air 13-inch (M3) (Wi-Fi)"
+    },
+    "iPad15,6": {
+        "capacity": 9629,
+        "name": "iPad Air 13-inch (M3) (Wi-Fi+Cellular)"
     },
     "iPad16,3": {
         "capacity": 10080,
-        "name": "iPad Pro (13-inch, M4)"
+        "name": "iPad Pro (13-inch, M4) (Wi-Fi)"
     },
     "iPad16,4": {
         "capacity": 10080,
-        "name": "iPad Pro (13-inch, M4)"
+        "name": "iPad Pro (13-inch, M4) (Wi-Fi+Cellular)"
+    },
+    "iPad15,7":{
+        "capacity":7606,
+        "name":"iPad (A16) (Wi-Fi)"
+    },
+    "iPad15,8":{
+        "capacity":7606,
+        "name":"iPad (A16) (Wi-Fi) (Wi-Fi+Cellular)"
     }
 }
