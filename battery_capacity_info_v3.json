@@ -1,8 +1,24 @@
 {
-    "version": 31,
-    "up_info": "新增了最近发布的iPad机型，修正了一些iPad的名称",
-    "up_date": "2025-08-21",
+    "version": 32,
+    "up_info": "新增iPhone 17系列和iPhone Air电池容量",
+    "up_date": "2025-09-11",
     "source": "Smile of a Mac",
+    "iPhone18,3": {
+        "capacity": 3692,
+        "name": "iPhone 17"
+    },
+    "iPhone18,1": {
+        "capacity": 3988,
+        "name": "iPhone 17 Pro"
+    },
+    "iPhone18,2": {
+        "capacity": 4823,
+        "name": "iPhone 17 Pro Max"
+    },
+    "iPhone18,4": {
+        "capacity": 3036,
+        "name": "iPhone Air"
+    },
     "iPhone8,1": {
         "capacity": 1690,
         "name": "iPhone 6s"
@@ -439,12 +455,12 @@
         "capacity": 10080,
         "name": "iPad Pro (13-inch, M4) (Wi-Fi+Cellular)"
     },
-    "iPad15,7":{
-        "capacity":7606,
-        "name":"iPad (A16) (Wi-Fi)"
+    "iPad15,7": {
+        "capacity": 7606,
+        "name": "iPad (A16) (Wi-Fi)"
     },
-    "iPad15,8":{
-        "capacity":7606,
-        "name":"iPad (A16) (Wi-Fi) (Wi-Fi+Cellular)"
+    "iPad15,8": {
+        "capacity": 7606,
+        "name": "iPad (A16) (Wi-Fi) (Wi-Fi+Cellular)"
     }
 }
