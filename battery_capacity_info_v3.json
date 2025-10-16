@@ -1,10 +1,10 @@
 {
-    "version": 32,
-    "up_info": "新增iPhone 17系列和iPhone Air电池容量",
-    "up_date": "2025-09-11",
+    "version": 33,
+    "up_info": "修正了iPhone 17和iPhone 17 Pro Max的电池数据",
+    "up_date": "2025-10-16",
     "source": "Smile of a Mac",
     "iPhone18,3": {
-        "capacity": 3692,
+        "capacity": 3652,
         "name": "iPhone 17"
     },
     "iPhone18,1": {
@@ -12,7 +12,7 @@
         "name": "iPhone 17 Pro"
     },
     "iPhone18,2": {
-        "capacity": 4823,
+        "capacity": 4768,
         "name": "iPhone 17 Pro Max"
     },
     "iPhone18,4": {
