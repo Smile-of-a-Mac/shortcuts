@@ -1,5 +1,5 @@
 {
 "version":62,
-"url":"https://www.icloud.com/shortcuts/d2ad0eae5a8f4637881e71aaa4ee45d3",
-"update_content":"电池健康 Verge 6.1\n1.新增电池最高/最低温度查询\n2.调整了结果界面磨砂效果的透明度\n3.优化了缺失值处理机制"
+"url":"https://www.icloud.com/shortcuts/a4700e6e94af40d4b4929906fcf7307f",
+"update_content":"电池健康 Verge 6.2\n1.移除了电池图标，新增了三个圆环图表示数据\n2.优化了历史记录的查看逻辑"
 }
