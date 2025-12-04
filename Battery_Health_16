@@ -1,5 +1,5 @@
 {
-"version":63,
-"url":"https://www.icloud.com/shortcuts/a4700e6e94af40d4b4929906fcf7307f",
-"update_content":"电池健康 Verge 6.2\n1.移除了电池图标，新增了三个圆环图表示数据\n2.优化了历史记录的查看逻辑"
+"version":64,
+"url":"https://www.icloud.com/shortcuts/c2e5d3772ed545e5abcf3950280de423",
+"update_content":"电池健康 Verge 6.2.1\n1.修复了自定义数据库不能生效的问题\n2.优化了结果页面信息卡片点击时的反馈效果"
 }
