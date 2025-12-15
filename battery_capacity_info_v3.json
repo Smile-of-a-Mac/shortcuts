@@ -1,7 +1,7 @@
 {
-    "version": 35,
-    "up_info": "修正了iPhone 17 Pro的电池数据，新增iPad Pro M5 11英寸的数据",
-    "up_date": "2025-12-06",
+    "version": 36,
+    "up_info": "修正了iPad Pro 11英寸第二代的电池容量数据。",
+    "up_date": "2025-12-15",
     "source": "Smile of a Mac",
     "iPhone18,3": {
         "capacity": 3652,
@@ -320,11 +320,11 @@
         "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi+Cellular)"
     },
     "iPad8,9": {
-        "capacity": 9332,
+        "capacity": 7544,
         "name": "iPad Pro (11-inch, 2nd generation) (Wi-Fi)"
     },
     "iPad8,10": {
-        "capacity": 9332,
+        "capacity": 7544,
         "name": "iPad Pro (11-inch, 2nd generation) (Wi-Fi+Cellular)"
     },
     "iPad13,4": {
