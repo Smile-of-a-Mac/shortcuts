@@ -1,7 +1,7 @@
 {
-    "version": 36,
-    "up_info": "修正了iPad Pro 11英寸第二代的电池容量数据。",
-    "up_date": "2025-12-15",
+    "version": 37,
+    "up_info": "修正了iPad Pro 11英寸 (M4)的电池容量数据。",
+    "up_date": "2025-12-16",
     "source": "Smile of a Mac",
     "iPhone18,3": {
         "capacity": 3652,
@@ -448,12 +448,12 @@
         "name": "iPad Air 13-inch (M3) (Wi-Fi+Cellular)"
     },
     "iPad16,3": {
-        "capacity": 10080,
-        "name": "iPad Pro (13-inch, M4) (Wi-Fi)"
+        "capacity": 8160,
+        "name": "iPad Pro (11-inch, M4) (Wi-Fi)"
     },
     "iPad16,4": {
-        "capacity": 10080,
-        "name": "iPad Pro (13-inch, M4) (Wi-Fi+Cellular)"
+        "capacity": 8160,
+        "name": "iPad Pro (11-inch, M4) (Wi-Fi+Cellular)"
     },
     "iPad15,7": {
         "capacity": 7606,
@@ -470,5 +470,13 @@
     "iPad17,2":{
         "capacity": 8152,
         "name": "iPad Pro (11-inch, M5)(Wi-Fi+Cellular)"
+    },
+    "iPad16,5": {
+        "capacity": 10080,
+        "name": "iPad Pro (13-inch, M4) (Wi-Fi)"
+    },
+    "iPad16,6": {
+        "capacity": 10080,
+        "name": "iPad Pro (13-inch, M4) (Wi-Fi+Cellular)"
     }
 }
