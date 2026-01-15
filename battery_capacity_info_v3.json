@@ -1,7 +1,7 @@
 {
     "version": 38,
     "up_info": "修正了iPhone 17的电池容量数据。",
-    "up_date": "2025-12-16",
+    "up_date": "2026-01-15",
     "source": "Smile of a Mac",
     "iPhone18,3": {
         "capacity": 3654,
