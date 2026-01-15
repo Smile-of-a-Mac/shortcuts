@@ -1,10 +1,10 @@
 {
-    "version": 37,
-    "up_info": "修正了iPad Pro 11英寸 (M4)的电池容量数据。",
+    "version": 38,
+    "up_info": "修正了iPhone 17的电池容量数据。",
     "up_date": "2025-12-16",
     "source": "Smile of a Mac",
     "iPhone18,3": {
-        "capacity": 3652,
+        "capacity": 3654,
         "name": "iPhone 17"
     },
     "iPhone18,1": {
