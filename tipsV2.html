@@ -1,306 +1,376 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>电池健康Verge·教程帮助</title>
     <style>
+        /* ===== 1. 核心变量 (与结果页一致) ===== */
         :root {
-            /* 浅色模式变量 */
-            --primary-color: #34C759;
+            --bg-color: #f2f2f7;
             --text-primary: #1d1d1f;
             --text-secondary: #86868b;
-            --bg-color: #f2f2f7;
-            --card-bg: rgba(255, 255, 255, 0.55);
-            --divider-color: rgba(0,0,0,0.1);
-            --shadow-color: rgba(0, 0, 0, 0.1);
+            --divider: rgba(60, 60, 67, 0.1);
+            --glass-bg: rgba(255, 255, 255, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --shadow: 0 4px 20px rgba(0,0,0,0.05);
+            --accent-color: #007aff; /* iOS 蓝 */
+            --highlight-color: #34C759; /* 电池绿 */
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                /* 深色模式变量 */
-                --bg-color: #121212;
-                --text-primary: #fff;
-                --text-secondary: #b2b2b6;
-                --card-bg: rgba(255, 255, 255, 0.08);
-                --divider-color: #333333;
-                --shadow-color: rgba(0, 0, 0, 0.5);
+                --bg-color: #000000;
+                --text-primary: #f5f5f7;
+                --text-secondary: #98989d;
+                --divider: rgba(254, 254, 254, 0.1);
+                --glass-bg: rgba(28, 28, 30, 0.6);
+                --glass-border: rgba(255, 255, 255, 0.1);
+                --shadow: 0 4px 20px rgba(0,0,0,0.4);
+                --accent-color: #0a84ff;
             }
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* ===== 2. 基础布局 ===== */
         body {
-            font: 16px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+            margin: 0; padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", sans-serif;
             background: var(--bg-color);
             color: var(--text-primary);
-            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            padding-bottom: 40px;
+            touch-action: pan-x pan-y; /* 禁止双指缩放手势 */
+            -webkit-user-select: none; /* 禁止选中文本 */
+            user-select: none;
+        }
+
+        /* 极光背景 */
+        #aurora {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; filter: blur(40px); transform: scale(1.1); pointer-events: none;
         }
 
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 600px; margin: 0 auto; padding: 20px 16px;
         }
 
+        /* 标题区 */
+        header { text-align: left; margin-bottom: 24px; margin-top: 20px; padding-left: 4px; }
+        h1 { margin: 0; font-size: 34px; font-weight: 700; letter-spacing: 0.5px; }
+        
+        /* ===== 卡片样式 (带回弹交互) ===== */
         .card {
-            width: 100%;
-            /* 充满容器，居中子元素 */
-            background: var(--card-bg-light);
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px) saturate(180%);
+            -webkit-backdrop-filter: blur(25px) saturate(180%);
             border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 16px 20px;
+            border-radius: 22px;
+            padding: 20px;
             margin-bottom: 16px;
-            backdrop-filter: blur(20px) saturate(180%);
-            box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.25), 0 6px 18px var(--shadow-color);
-            transition: all 0.4s ease;
+            box-shadow: var(--shadow);
+            
+            /* 物理回弹动画 */
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                        background 0.3s ease, 
+                        filter 0.3s ease;
+            transform: scale(1);
+            will-change: transform;
         }
 
-        .section-title {
-            font-size: 20px;
-            text-align: left;
-            /* padding: 12px 0; */
+        /* 按压状态 */
+        .card.active-touch { 
+            transform: scale(0.99); 
+            filter: brightness(0.98); 
+            transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), 
+                        filter 0.1s ease;
         }
 
-        .subsection-title {
+        /* ===== 内容排版 ===== */
+        h2.section-title {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            color: var(--text-primary);
+        }
+
+        h3.subsection-title {
             font-size: 16px;
-            font-weight: 500;
-            margin: 12px 0;
-        }
-
-        .divider {
-            border: 0;
-            height: 1px;
-            background: var(--divider-color);
-            margin: 16px 0;
-        }
-
-        .text-muted {
-            color: var(--text-secondary);
-            font-size: 14px;
-        }
-
-        .highlight {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s;
-        }
-
-        .highlight:hover {
-            opacity: 0.8;
-        }
-
-        .issue-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .issue-item {
-            padding: 12px 0;
-        }
-
-        .contributor-list {
-            padding: 0;
-            list-style: none;
+            font-weight: 600;
+            margin: 10px 0 6px 0;
+            color: var(--text-primary);
         }
 
         p {
-            text-indent: 2em;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-align: justify;
         }
 
-        @media (max-width: 480px) {
-            .container {
-                padding: 16px;
-            }
+        /* 列表去样式 */
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { margin-bottom: 12px; }
 
-            .card {
-                padding: 20px;
-            }
+        /* 分割线 */
+        hr { border: 0; height: 1px; background: var(--divider); margin: 16px 0; }
+
+        /* 链接样式 */
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
         }
+        
+        /* 教程跳转按钮特别样式 */
+        .tutorial-link {
+            display: block;
+            text-align: center;
+            background: rgba(52, 199, 89, 0.1); /* 浅绿色背景 */
+            color: var(--highlight-color);
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center; 
+            font-size: 12px; 
+            color: var(--text-secondary); 
+            margin-top: 30px; 
+            opacity: 0.6;
+        }
+
+        /* 特殊文字缩进 */
+        .indent-text { text-indent: 2em; }
+        
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <!-- 主标题 -->
-        <h1 class="section-title" style="text-align: left; font-size: 48px;">教程帮助</h1>
-        <br>
 
-        <!-- 教程模块 -->
+    <canvas id="aurora"></canvas>
+
+    <div class="container">
+        <header>
+            <h1>教程帮助</h1>
+        </header>
+
         <section class="card">
             <h2 class="section-title">教程</h2>
-            <hr class="divider">
+            <hr>
             <div>
-                <div style="text-align: center;">
-                    <a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d"
-                        class="highlight" style="display: block; margin: 16px 0;">
-                        ➡️点击跳转B站查看完整视频教程⬅️
-                    </a>
-                </div>
-                <p class="text-muted">
-                    由于“快捷指令”app的限制，暂时无法在预览网页中使用b站外链播放器的方法，您可以点击标题来观看教程。
+                <a href="https://www.bilibili.com/video/BV1Jd4y1c7Pv/?vd_source=c8adce0c12e9139d93e445dc47816b4d" class="tutorial-link">
+                    点击跳转 B 站查看完整视频教程
+                </a>
+                <p style="text-align: center; font-size: 13px; margin-top: 8px;">
+                    由于“快捷指令”App 的限制，暂时无法在预览网页中直接播放视频，请点击上方按钮跳转观看。
                 </p>
             </div>
         </section>
 
         <section class="card">
             <h2 class="section-title">特别提醒</h2>
-            <hr class="divider">
-            <p class="text-muted">
-                ⚠️注意：5.4版本不支持之前旧版本的数据库，请各位用户务必更新到“数据库(29)”或更新版本使用，如果您的网络状况不理想，您可以前往：“偏好设置”-“重新部署数据库”来部署新的数据库
+            <hr>
+            <p>
+                ⚠️ 注意：5.4 版本不支持之前旧版本的数据库，请各位用户务必更新到“数据库(29)”或更新版本使用。
+            </p>
+            <p>
+                如果您的网络状况不理想，您可以前往：“偏好设置” - “重新部署数据库”来部署新的数据库。
             </p>
         </section>
 
-        <!-- 常见问题 -->
         <section class="card">
             <h2 class="section-title">常见问题</h2>
-            <hr class="divider">
-            <ul class="issue-list">
-                <!-- 问题1 -->
-                <li class="issue-item">
-                    <h3 class="subsection-title">找不到Analytics文件</h3>
-                    <p class="text-muted">
-                        1.检查共享iPhone（或iPad）分析选项是否打开，若没有打开请打开。
-                    </p>
-                    <p class="text-muted">
-                        2.如果打开了此选项依然搜索不到目标文件，请尝试还原所有设置并重新打开此选项，第二天上午8:00左右重新查询即可。
-                    </p>
+            <hr>
+            <ul>
+                <li>
+                    <h3 class="subsection-title">找不到 Analytics 文件</h3>
+                    <p>1. 检查“共享 iPhone（或 iPad）分析”选项是否打开，若没有打开请打开。</p>
+                    <p>2. 如果打开了此选项依然搜索不到目标文件，请尝试还原所有设置并重新打开此选项，第二天上午 8:00 左右重新查询即可。</p>
                 </li>
-                <hr class="divider">
-
-                <!-- 问题2 -->
-                <li class="issue-item">
+                <hr>
+                <li>
                     <h3 class="subsection-title">无法获取数据，请检查传入的文件是否正确</h3>
-                    <p class="text-muted">
-                        1.您可能传入了错误的文件，检查您共享的文件是否正确。
-                    </p>
+                    <p>1. 您可能传入了错误的文件，请检查您共享的文件名是否包含 Analytics 字样。</p>
                 </li>
-                <hr class="divider">
-
-                <!-- 问题3 -->
-                <li class="issue-item">
+                <hr>
+                <li>
                     <h3 class="subsection-title">共享菜单中选择捷径后没有结果</h3>
-                    <p class="text-muted">
-                        1.此问题为iOS/iPadOS 16.0.x系统bug，后续系统版本仍可能出现，您需要重新打开设置app，一定要上划关闭后台，然后重试。
-                    </p>
+                    <p>1. 此问题为 iOS/iPadOS 16.0.x 系统 Bug，后续系统版本仍可能出现。您需要重新打开设置 App，一定要上划关闭后台，然后重试。</p>
                 </li>
-                <hr class="divider">
-
-                <!-- 问题4 -->
-                <li class="issue-item">
+                <hr>
+                <li>
                     <h3 class="subsection-title">分析文件缺失关键数据</h3>
-                    <p class="text-muted">
-                        如果您在生成文件时间的过去24小时中没有充电（也有可能为系统工作不正常），则分析文件中将不会保存实时电池数据。
-                    </p>
+                    <p>如果您在生成文件时间的过去 24 小时中没有充电（也有可能为系统工作不正常），则分析文件中将不会保存实时电池数据。</p>
                 </li>
-                <hr class="divider">
-
-                <!-- 问题5 -->
-                <li class="issue-item">
+                <hr>
+                <li>
                     <h3 class="subsection-title">关于捷径计算</h3>
-                    <p class="text-muted">
-                        捷径计算的结果基于昨天08:00至今天08:00共24小时中记录的电池数据得出，与系统计算电池容量的算法有所不同，这些数据可能会受到环境气温、充电时间、充电设备的影响，故数值可能会出现浮动，属正常现象。
-                    </p>
-                    <p class="text-muted">⚠️捷径数据中存储的各个机型的电池容量与设备电池硬件上标定的电池容量有所不同，原因是iOS并不以硬件上的容量计算电池效率。</p>
+                    <p class="indent-text">捷径计算的结果基于昨天 08:00 至今天 08:00 共 24 小时中记录的电池数据得出，与系统计算电池容量的算法有所不同。这些数据可能会受到环境气温、充电时间、充电设备的影响，故数值可能会出现浮动，属正常现象。</p>
+                    <p class="indent-text">⚠️ 捷径数据中存储的各个机型的电池容量与设备电池硬件上标定的电池容量有所不同，原因是 iOS 并不以硬件上的容量计算电池效率。</p>
                 </li>
-                <hr class="divider">
-
-                <!-- 问题6 -->
-                <li class="issue-item">
+                <hr>
+                <li>
                     <h3 class="subsection-title">关于总工作时间</h3>
-                    <p class="text-muted">
-                        总工作时间是以电池连接到主板上的日期开始计算的，所以这个时间在一般情况下大于您使用设备的时间，若您的设备没有更换过电池，则此数据从设备的生产日期开始计算；若您的设备更换过电池（不包括移植电芯的情况），则此数据从更换新电池的日期开始计算。
-                    </p>
+                    <p class="indent-text">总工作时间是以电池连接到主板上的日期开始计算的，所以这个时间在一般情况下大于您使用设备的时间。若您的设备没有更换过电池，则此数据从设备的生产日期开始计算；若您的设备更换过电池（不包括移植电芯的情况），则此数据从更换新电池的日期开始计算。</p>
                 </li>
             </ul>
         </section>
 
-        <!-- 数据说明 -->
         <section class="card">
             <h2 class="section-title">数据说明</h2>
-            <hr class="divider">
-            <ul class="issue-list">
-                <!-- Qmax容量 -->
-                <li class="issue-item">
-                    <h3 class="subsection-title">Qmax容量</h3>
-                    <p class="text-muted">
-                        Qmax是电芯最大化学容量的预估值。保护板会定期更新该数值，并协同其他参数计算电池的实际容量与满充容量。
-                    </p>
-                    <p class="text-muted">
-                        在iPhone 13及以上机型中，当电池循环次数超过一千次，或循环次数为数百次且效率低于82%时，将触发二次降压，同时启用Qmax容量锁定机制。以iPhone
-                        13为例，其Qmax会被锁定在3504mAh等固定数值，这直接导致电池效率无法恢复至100%，通常最高仅能恢复至95%左右；即便更换大容量电芯或经多次充放电循环，Qmax数值也不再上升，从而限制了电池实际可发挥的容量。
-                    </p>
+            <hr>
+            <ul>
+                <li>
+                    <h3 class="subsection-title">Qmax 容量</h3>
+                    <p class="indent-text">Qmax 是电芯最大化学容量的预估值。保护板会定期更新该数值，并协同其他参数计算电池的实际容量与满充容量。</p>
+                    <p class="indent-text">在 iPhone 13 及以上机型中，当电池循环次数超过一千次，或循环次数为数百次且效率低于 82% 时，将触发二次降压，同时启用 Qmax 容量锁定机制。以 iPhone 13 为例，其 Qmax 会被锁定在 3504mAh 等固定数值，这直接导致电池效率无法恢复至 100%，通常最高仅能恢复至 95% 左右。</p>
                 </li>
-                <hr class="divider">
-
-                <!-- 满充容量 -->
-                <li class="issue-item">
+                <hr>
+                <li>
                     <h3 class="subsection-title">满充容量</h3>
-                    <p class="text-muted">
-                        满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值。在不同设备和电池体系中，满充容量的确定和表现有所不同。
-                    </p>
-                    <p class="text-muted">
-                        在对电池容量进行研究和测试时，满充容量也是一个关键指标。在某些电池的测试中，发现存在满充容量参数设置错误导致剩余容量显示错误的情况，通过调整设计容量和满充容量等操作，使电池的相关数据如
-                        SOC（剩余容量/满充容量）、COH（健康度）等恢复正常，满充容量的准确设置对于电池性能监测和使用具有重要意义。
-                    </p>
+                    <p class="indent-text">满充容量是指电池在充满电状态下能够实际储存并可被设备使用的电量数值。在不同设备和电池体系中，满充容量的确定和表现有所不同。</p>
+                    <p class="indent-text">在对电池容量进行研究和测试时，满充容量也是一个关键指标。准确设置对于电池性能监测和使用具有重要意义。</p>
                 </li>
             </ul>
-            <hr class="divider">
-            <p style="font-size: 14px; text-indent: 0em;">
-                ⚠️作者声明：该部分内容来自互联网，由于作者并非电池领域的专业人士，无法考察其真实性，仅供参考。如有错误请通过酷安联系作者进行订正。
+            <hr>
+            <p style="font-size: 12px; opacity: 0.8;">
+                ⚠️ 作者声明：该部分内容来自互联网，由于作者并非电池领域的专业人士，无法考察其真实性，仅供参考。如有错误请通过酷安联系作者进行订正。
             </p>
         </section>
 
-        <!-- 特别感谢 -->
         <section class="card">
             <h2 class="section-title">特别感谢</h2>
-            <hr class="divider">
-            <p class="text-muted">
-                在此请允许我再次感谢
-                <a href="https://space.bilibili.com/16422613" class="highlight">夕眺舞伊</a>
-                提供的容量信息和理论支持。
-            </p>
-            <p class="text-muted">
-                这里是他的
-                <a href="https://m.tb.cn/h.5yMKdqaT5bvZWzX" class="highlight">淘宝店铺</a>。
-            </p>
+            <hr>
+            <p>在此请允许我再次感谢 <a href="https://space.bilibili.com/16422613">夕眺舞伊</a> 提供的容量信息和理论支持。</p>
+            <p>这里是他的 <a href="https://m.tb.cn/h.5yMKdqaT5bvZWzX">淘宝店铺</a>。</p>
         </section>
 
-        <!-- 贡献名单 -->
         <section class="card">
             <h2 class="section-title">贡献名单</h2>
-            <hr class="divider">
-            <ul class="contributor-list">
-                <li class="text-muted">夕眺舞伊（哔哩哔哩）：2017~2021发布的iPhone（iPhone 8～iPhone 13 Pro Max）所有机型的电池容量信息</li>
-                <li class="text-muted">我是小兔崽汁（哔哩哔哩）：iPad 8的电池容量信息</li>
-                <li class="text-muted">你请输入新的昵称呢（哔哩哔哩）：iPad mini 6的电池容量信息</li>
-                <li class="text-muted">你不要乱来好不好（哔哩哔哩）：iPhone 15 Pro Max的电池容量信息</li>
-                <li class="text-muted">不看也会爆炸（酷安）：iPhone 15 Pro的电池容量信息</li>
-                <li class="text-muted">eason12345（酷安）：iPad Pro 2022 11-inch的电池容量信息</li>
-                <li class="text-muted">世辉耀（酷安）：为2.3.2版本的历史记录添加了复制功能</li>
-                <li class="text-muted">黑夜丶（酷安）：iPhone 16 Pro的电池容量信息</li>
-                <li class="text-muted">铁盒的序已变成了日記（酷安）：iPhone 16 Pro Max的电池容量信息</li>
-                <li class="text-muted">寻南觅北（酷安）：iPad mini (A17 Pro)的电池容量信息</li>
-                <li class="text-muted">骑上我心爱的小托托（酷安）：iPhone 16的电池容量信息</li>
-                <li class="text-muted">三两老友（酷安）：iPhone 17的电池容量信息</li>
-                <li class="text-muted">流忍似火（酷安）：iPhone 17 Pro Max的电池容量信息</li>
-                <li class="text-muted">一只咕咕酱（酷安）：iPhone Air的电池容量信息</li>
-                <li class="text-muted">IMCDD（酷安）：iPhone 17 Pro的电池容量信息</li>
-                <li class="text-muted">IMCDD（酷安）：iPad Pro 11-inch (M5)的电池容量信息</li>
+            <hr>
+            <ul>
+                <li><p><strong>夕眺舞伊（哔哩哔哩）</strong>：iPhone 8 ～ 13 Pro Max 所有机型的电池容量信息</p></li>
+                <li><p><strong>我是小兔崽汁（哔哩哔哩）</strong>：iPad 8 的电池容量信息</p></li>
+                <li><p><strong>你请输入新的昵称呢（哔哩哔哩）</strong>：iPad mini 6 的电池容量信息</p></li>
+                <li><p><strong>你不要乱来好不好（哔哩哔哩）</strong>：iPhone 15 Pro Max 的电池容量信息</p></li>
+                <li><p><strong>不看也会爆炸（酷安）</strong>：iPhone 15 Pro 的电池容量信息</p></li>
+                <li><p><strong>eason12345（酷安）</strong>：iPad Pro 2022 11-inch 的电池容量信息</p></li>
+                <li><p><strong>世辉耀（酷安）</strong>：为 2.3.2 版本的历史记录添加了复制功能</p></li>
+                <li><p><strong>黑夜丶（酷安）</strong>：iPhone 16 Pro 的电池容量信息</p></li>
+                <li><p><strong>铁盒的序已变成了日記（酷安）</strong>：iPhone 16 Pro Max 的电池容量信息</p></li>
+                <li><p><strong>寻南觅北（酷安）</strong>：iPad mini (A17 Pro) 的电池容量信息</p></li>
+                <li><p><strong>骑上我心爱的小托托（酷安）</strong>：iPhone 16 的电池容量信息</p></li>
+                <li><p><strong>三两老友（酷安）</strong>：iPhone 17 的电池容量信息</p></li>
+                <li><p><strong>流忍似火（酷安）</strong>：iPhone 17 Pro Max 的电池容量信息</p></li>
+                <li><p><strong>一只咕咕酱（酷安）</strong>：iPhone Air 的电池容量信息</p></li>
+                <li><p><strong>IMCDD（酷安）</strong>：iPhone 17 Pro / iPad Pro 11-inch (M5) 的电池容量信息</p></li>
             </ul>
         </section>
 
-        <!-- 页脚 -->
-        <footer class="text-muted" style="text-align: center; padding: 20px 0;">
-            Copyright© Smile of a Mac 2022 - 2026
+        <footer class="footer">
+            Copyright © Smile of a Mac 2022 - 2026
         </footer>
     </div>
-</body>
 
+    <script>
+        const canvas = document.getElementById('aurora');
+        if(canvas){
+            /* ========== 1. 极光背景逻辑 ========== */
+        const ctx = canvas.getContext('2d');
+        let w, h, lines = [];
+        const dpr = window.devicePixelRatio || 1;
+
+        // 获取配色方案
+        const getPalette = () => {
+            const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            return isDark
+            ? [{c1: {h:220,s:100,l:45}, c2: {h:280,s:90,l:45}}, {c1: {h:160,s:100,l:40}, c2: {h:200,s:90,l:45}}, {c1: {h:300,s:90,l:45}, c2: {h:340,s:100,l:50}}]
+            : [{c1: {h:210,s:85,l:65}, c2: {h:260,s:80,l:70}}, {c1: {h:170,s:80,l:60}, c2: {h:200,s:85,l:65}}, {c1: {h:280,s:80,l:70}, c2: {h:320,s:85,l:75}}];
+        };
+
+        class Line {
+            constructor(i) { this.i = i; this.nodes = []; this.refresh(); for(let n=0; n<=6; n++) this.nodes.push({x:0, baseY:0}); }
+            refresh() { const p = getPalette(); this.colorPair = p[this.i % p.length]; this.seed = Math.random()*100; }
+            update(tick) {
+                ctx.beginPath();
+                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const alpha = isDark ? 0.6 : 0.5; 
+                const xOff = Math.sin(tick*0.002 + this.i)*100;
+                
+                ctx.moveTo(-200, h);
+                for (let n=0; n<=6; n++) {
+                    const node = this.nodes[n]; 
+                    node.x = (w/6)*n; 
+                    node.baseY = h * (0.3 + (this.i * 0.1)); 
+                    const noise = Math.sin(tick*0.008 + n*0.8 + this.seed)*150 + Math.cos(tick*0.015 + n)*50;
+                    const tx = node.x + xOff; const ty = node.baseY + noise;
+                    if(n===0) ctx.lineTo(tx, ty); 
+                    else { 
+                        const prev = this.nodes[n-1]; 
+                        const cx = (prev.lx + tx)/2; 
+                        const cy = (prev.ly + ty)/2; 
+                        ctx.quadraticCurveTo(prev.lx, prev.ly, cx, cy); 
+                    }
+                    node.ly = ty; node.lx = tx;
+                }
+                ctx.lineTo(w+200, h);
+                const g = ctx.createLinearGradient(0, h, 0, 0);
+                g.addColorStop(0, 'transparent');
+                g.addColorStop(0.2, `hsla(${this.colorPair.c1.h},${this.colorPair.c1.s}%,${this.colorPair.c1.l}%,${alpha})`);
+                g.addColorStop(0.8, `hsla(${this.colorPair.c2.h},${this.colorPair.c2.s}%,${this.colorPair.c2.l}%,${alpha})`);
+                g.addColorStop(1, 'transparent');
+                ctx.fillStyle = g; ctx.fill();
+            }
+        }
+
+        function init() { 
+            w = window.innerWidth; h = window.innerHeight; 
+            canvas.width = w * dpr; canvas.height = h * dpr; 
+            ctx.scale(dpr, dpr); 
+            lines = [new Line(0), new Line(1), new Line(2)]; 
+        }
+
+        let tick = 0;
+        function loop() {
+            ctx.clearRect(0,0,w,h);
+            ctx.globalCompositeOperation = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'screen' : 'source-over';
+            tick++; lines.forEach(l => l.update(tick)); 
+            requestAnimationFrame(loop);
+        }
+
+        window.addEventListener('resize', init);
+        window.matchMedia('(prefers-color-scheme: dark)').addListener(() => lines.forEach(l => l.refresh()));
+        init(); loop();
+
+        /* ========== 2. 触摸反馈 + 防缩放逻辑 ========== */
+        
+        // 2.1 触摸反馈 (物理按压效果)
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('touchstart', function() { this.classList.add('active-touch'); }, { passive: true });
+            card.addEventListener('touchend', function() { setTimeout(() => { this.classList.remove('active-touch'); }, 100); });
+            card.addEventListener('touchcancel', function() { this.classList.remove('active-touch'); });
+        });
+        }
+
+        // 2.2 防缩放逻辑
+        // 禁止双指捏合
+        document.addEventListener('touchmove', function(event) {
+            if (event.scale !== 1) { event.preventDefault(); }
+        }, { passive: false });
+
+        // 禁止双击缩放
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(event) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, { passive: false });
+    </script>
+</body>
 </html>
