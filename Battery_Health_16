@@ -1,5 +1,5 @@
 {
-"version":66,
-"url":"https://www.icloud.com/shortcuts/7375307296d144e7bee22cbd7dbf2e13",
-"update_content":"电池健康 Verge 7.0\n1.新增Aurora X视觉效果，在偏好设置中可以关闭\n2.新增了循环预测功能（目前处于Beta测试）\n3.去除了一些冗余的操作\n4.更新了内置数据"
+"version":67,
+"url":"https://www.icloud.com/shortcuts/3232e2ea59374a7c90904b21b180aa7f",
+"update_content":"电池健康 Verge 7.0.1\n1.TensorFlow模型已内置，无需联网预测\n2.更换了预测功能的图标"
 }
