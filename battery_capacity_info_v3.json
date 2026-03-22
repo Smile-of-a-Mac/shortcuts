@@ -1,7 +1,7 @@
 {
-    "version": 38,
-    "up_info": "修正了iPhone 17的电池容量数据。",
-    "up_date": "2026-01-15",
+    "version": 39,
+    "up_info": "新增了iPhone 17e的电池容量数据。",
+    "up_date": "2026-03-22",
     "source": "Smile of a Mac",
     "iPhone18,3": {
         "capacity": 3654,
@@ -18,6 +18,10 @@
     "iPhone18,4": {
         "capacity": 3116,
         "name": "iPhone Air"
+    },
+    "iPhone18,5": {
+        "capacity": 4005,
+        "name": "iPhone 17e"
     },
     "iPhone8,1": {
         "capacity": 1690,
@@ -463,11 +467,11 @@
         "capacity": 7606,
         "name": "iPad (A16) (Wi-Fi+Cellular)"
     },
-    "iPad17,1":{
+    "iPad17,1": {
         "capacity": 8152,
         "name": "iPad Pro (11-inch, M5)(Wi-Fi)"
     },
-    "iPad17,2":{
+    "iPad17,2": {
         "capacity": 8152,
         "name": "iPad Pro (11-inch, M5)(Wi-Fi+Cellular)"
     },
