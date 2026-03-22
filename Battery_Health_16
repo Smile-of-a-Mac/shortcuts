@@ -1,5 +1,5 @@
 {
-"version":67,
-"url":"https://www.icloud.com/shortcuts/3232e2ea59374a7c90904b21b180aa7f",
-"update_content":"电池健康 Verge 7.0.1\n1.TensorFlow模型已内置，无需联网预测\n2.更换了预测功能的图标"
+"version":68,
+"url":"https://www.icloud.com/shortcuts/584795ce3c4f4b39803090dac79b6de7",
+"update_content":"电池健康 Verge 7.1\n1.重写核心算法，移除了笨重的TensorFlow神经网络，改用纯数学统计\n2.新增卡片HDR指尖跟随高光效果。\n3.为新用户增加了引导功能"
 }
