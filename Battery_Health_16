@@ -1,5 +1,5 @@
 {
-"version":68,
-"url":"https://www.icloud.com/shortcuts/584795ce3c4f4b39803090dac79b6de7",
-"update_content":"电池健康 Verge 7.1\n1.重写核心算法，移除了笨重的TensorFlow神经网络，改用纯数学统计\n2.新增卡片HDR指尖跟随高光效果。\n3.为新用户增加了引导功能"
+"version":69,
+"url":"https://www.icloud.com/shortcuts/98edc43859bc4e59ae4a2eef5ed47fb6",
+"update_content":"电池健康 Verge 7.1.1\n1.修复了意外报错无充电数据的问题\n2. 调整了浅色模式高光的亮度"
 }
