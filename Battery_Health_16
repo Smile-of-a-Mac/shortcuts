@@ -1,5 +1,7 @@
 {
-"version":69,
-"url":"https://www.icloud.com/shortcuts/98edc43859bc4e59ae4a2eef5ed47fb6",
-"update_content":"电池健康 Verge 7.1.1\n1.修复了意外报错无充电数据的问题\n2. 调整了浅色模式高光的亮度"
+"version":70,
+"url":"https://www.icloud.com/shortcuts/3fb490c6893e4a759be18985e14dfa06",
+"update_content":"电池健康 Verge 7.2\n1.在循环预测页面新增趋势图卡片，实现了对数据的可视化，用户可以在卡片上部使用开关切换已有记录和预测数据。
+\n2.优化了预测模型，用历史数据计算经验目标点，过滤平台期和异常陡降，根据循环跨度、样本数、健康度变化量做多因子加权融合。
+\n3.修复了循环预测页面触摸高光效果可能不可用的问题。"
 }
