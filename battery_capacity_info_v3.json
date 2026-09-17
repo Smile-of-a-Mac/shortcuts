@@ -1,8 +1,16 @@
 {
-    "version": 39,
+    "version": 40,
     "up_info": "新增了iPhone 17e的电池容量数据。",
-    "up_date": "2026-03-22",
+    "up_date": "2026-09-17",
     "source": "Smile of a Mac",
+    "iPhone19,2":{
+        "capacity": 4056,
+        "name": "iPhone 18 Pro"
+    },
+    "iPhone19,3":{
+        "capacity": 5235,
+        "name": "iPhone 18 Pro Max"
+    },
     "iPhone18,3": {
         "capacity": 3654,
         "name": "iPhone 17"
