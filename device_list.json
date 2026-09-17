@@ -1,6 +1,10 @@
 {
-    "version": 4,
+    "version": 5,
     "iPhone": {
+        "iPhone 18系列":{
+            "iPhone 18 Pro":"iPhone19,2",
+            "iPhone 18 Pro Max":"iPhone19,3"
+        },
         "iPhone Air系列": {
             "iPhone Air": "iPhone18,4"
         },
