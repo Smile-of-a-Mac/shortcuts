@@ -1,15 +1,19 @@
 {
-    "version": 40,
-    "up_info": "新增了iPhone 17e的电池容量数据。",
-    "up_date": "2026-09-17",
+    "version": 41,
+    "up_info": "补充了iPhone 18 Pro Max国际版、iPad Air（M4）和iPad Pro 13英寸（M5）的机型及电池容量，并修正部分机型匹配。",
+    "up_date": "2026-09-24",
     "source": "Smile of a Mac",
-    "iPhone19,2":{
+    "iPhone19,2": {
         "capacity": 4056,
         "name": "iPhone 18 Pro"
     },
-    "iPhone19,3":{
-        "capacity": 5235,
-        "name": "iPhone 18 Pro Max"
+    "iPhone19,3": {
+        "capacity": 5567,
+        "name": "iPhone 18 Pro Max (U.S.)"
+    },
+    "iPhone19,7": {
+        "capacity": 5335,
+        "name": "iPhone 18 Pro Max (Global)"
     },
     "iPhone18,3": {
         "capacity": 3654,
@@ -321,11 +325,11 @@
     },
     "iPad8,2": {
         "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi+Cellular)"
+        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi)"
     },
     "iPad8,3": {
         "capacity": 7534,
-        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi)"
+        "name": "iPad Pro (11-inch, 1st generation) (Wi-Fi+Cellular)"
     },
     "iPad8,4": {
         "capacity": 7534,
@@ -385,11 +389,11 @@
     },
     "iPad8,6": {
         "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi+Cellular)"
+        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi)"
     },
     "iPad8,7": {
         "capacity": 9720,
-        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi)"
+        "name": "iPad Pro (12.9-inch, 3rd generation) (Wi-Fi+Cellular)"
     },
     "iPad8,8": {
         "capacity": 9720,
@@ -413,7 +417,7 @@
     },
     "iPad13,10": {
         "capacity": 10486,
-        "name": "iPad Pro (12.9-inch, 5th generation (Wi-Fi))"
+        "name": "iPad Pro (12.9-inch, 5th generation) (Wi-Fi)"
     },
     "iPad13,11": {
         "capacity": 10486,
@@ -437,15 +441,31 @@
     },
     "iPad14,11": {
         "capacity": 10340,
-        "name": "iPad Air 13-inch (M2) (Wi-Fi)"
-    },
-    "iPad14,12": {
-        "capacity": 10340,
         "name": "iPad Air 13-inch (M2) (Wi-Fi+Cellular)"
+    },
+    "iPad14,10": {
+        "capacity": 10340,
+        "name": "iPad Air 13-inch (M2) (Wi-Fi)"
     },
     "iPad15,3": {
         "capacity": 7613,
         "name": "iPad Air 11-inch (M3) (Wi-Fi)"
+    },
+    "iPad16,8": {
+        "capacity": 7606,
+        "name": "iPad Air 11-inch (M4) (Wi-Fi)"
+    },
+    "iPad16,9": {
+        "capacity": 7606,
+        "name": "iPad Air 11-inch (M4) (Wi-Fi+Cellular)"
+    },
+    "iPad16,10": {
+        "capacity": 9705,
+        "name": "iPad Air 13-inch (M4) (Wi-Fi)"
+    },
+    "iPad16,11": {
+        "capacity": 9705,
+        "name": "iPad Air 13-inch (M4) (Wi-Fi+Cellular)"
     },
     "iPad15,4": {
         "capacity": 7613,
@@ -482,6 +502,14 @@
     "iPad17,2": {
         "capacity": 8152,
         "name": "iPad Pro (11-inch, M5)(Wi-Fi+Cellular)"
+    },
+    "iPad17,3": {
+        "capacity": 10209,
+        "name": "iPad Pro (13-inch, M5) (Wi-Fi)"
+    },
+    "iPad17,4": {
+        "capacity": 10209,
+        "name": "iPad Pro (13-inch, M5) (Wi-Fi+Cellular)"
     },
     "iPad16,5": {
         "capacity": 10080,
