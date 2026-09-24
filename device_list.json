@@ -1,9 +1,10 @@
 {
-    "version": 5,
+    "version": 6,
     "iPhone": {
-        "iPhone 18系列":{
-            "iPhone 18 Pro":"iPhone19,2",
-            "iPhone 18 Pro Max":"iPhone19,3"
+        "iPhone 18系列": {
+            "iPhone 18 Pro": "iPhone19,2",
+            "iPhone 18 Pro Max (U.S.)": "iPhone19,3",
+            "iPhone 18 Pro Max (Global)": "iPhone19,7"
         },
         "iPhone Air系列": {
             "iPhone Air": "iPhone18,4"
@@ -95,7 +96,11 @@
             "iPad Air 11-inch (M3) Wi‑Fi": "iPad15,3",
             "iPad Air 11-inch (M3) Wi‑Fi+Cellular": "iPad15,4",
             "iPad Air 13-inch (M3) Wi‑Fi": "iPad15,5",
-            "iPad Air 13-inch (M3) Wi‑Fi+Cellular": "iPad15,6"
+            "iPad Air 13-inch (M3) Wi‑Fi+Cellular": "iPad15,6",
+            "iPad Air 11-inch (M4) Wi‑Fi": "iPad16,8",
+            "iPad Air 11-inch (M4) Wi‑Fi+Cellular": "iPad16,9",
+            "iPad Air 13-inch (M4) Wi‑Fi": "iPad16,10",
+            "iPad Air 13-inch (M4) Wi‑Fi+Cellular": "iPad16,11"
         },
         "iPad mini 系列": {
             "iPad mini (5th gen) Wi‑Fi": "iPad11,1",
@@ -107,7 +112,7 @@
         },
         "iPad Pro 系列": {
             "iPad Pro 11-inch (第1代) Wi‑Fi": "iPad8,1",
-            "iPad Pro 11-inch (第1代) Wi‑Fi+Cellular": "iPad8,2",
+            "iPad Pro 11-inch (第1代) Wi‑Fi+Cellular": "iPad8,3",
             "iPad Pro 11-inch (第2代) Wi‑Fi": "iPad8,9",
             "iPad Pro 11-inch (第2代) Wi‑Fi+Cellular": "iPad8,10",
             "iPad Pro 11-inch (第3代) Wi‑Fi": "iPad13,4",
@@ -117,7 +122,7 @@
             "iPad Pro 11-inch (M4) Wi‑Fi": "iPad16,3",
             "iPad Pro 11-inch (M4) Wi‑Fi+Cellular": "iPad16,4",
             "iPad Pro 12.9-inch (第3代) Wi‑Fi": "iPad8,5",
-            "iPad Pro 12.9-inch (第3代) Wi‑Fi+Cellular": "iPad8,6",
+            "iPad Pro 12.9-inch (第3代) Wi‑Fi+Cellular": "iPad8,7",
             "iPad Pro 12.9-inch (第4代) Wi‑Fi": "iPad8,11",
             "iPad Pro 12.9-inch (第4代) Wi‑Fi+Cellular": "iPad8,12",
             "iPad Pro 12.9-inch (第5代) Wi‑Fi": "iPad13,8",
@@ -126,8 +131,10 @@
             "iPad Pro 12.9-inch (第6代) Wi‑Fi+Cellular": "iPad14,6",
             "iPad Pro 13-inch (M4) Wi‑Fi": "iPad16,5",
             "iPad Pro 13-inch (M4) Wi‑Fi+Cellular": "iPad16,6",
-            "iPad Pro 11-inch (M5) Wi-FI": "iPad17,1",
-            "iPad Pro 11-inch (M5) Wi-FI+Cellular": "iPad17,2"
+            "iPad Pro 11-inch (M5) Wi‑Fi": "iPad17,1",
+            "iPad Pro 11-inch (M5) Wi‑Fi+Cellular": "iPad17,2",
+            "iPad Pro 13-inch (M5) Wi‑Fi": "iPad17,3",
+            "iPad Pro 13-inch (M5) Wi‑Fi+Cellular": "iPad17,4"
         }
     }
 }
