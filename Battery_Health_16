@@ -2,6 +2,6 @@
 Battery_Health_16
 {
   "version": 72,
-  "url": "https://www.icloud.com/shortcuts/52b73645d9644571a46ebf591f84e1a8",
+  "url": "https://www.icloud.com/shortcuts/d6131419238749ce94044253e7867405,
   "update_content": "电池健康 Verge 7.3\n1.新增充电电压上限查询功能。\n2.完善设备数据库，补充iPhone Duo 等机型及电池容量，并修正部分机型匹配。\n3.调整极光样式。"
 }
