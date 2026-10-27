@@ -1,7 +1,7 @@
 {
-    "version": 41,
-    "up_info": "补充了iPhone 18 Pro Max国际版、iPad Air（M4）和iPad Pro 13英寸（M5）的机型及电池容量，并修正部分机型匹配。",
-    "up_date": "2026-09-24",
+    "version": 42,
+    "up_info": "新增了iPhone Duo的机型及电池容量数据。",
+    "up_date": "2026-10-28",
     "source": "Smile of a Mac",
     "iPhone19,2": {
         "capacity": 4056,
@@ -10,6 +10,10 @@
     "iPhone19,3": {
         "capacity": 5567,
         "name": "iPhone 18 Pro Max (U.S.)"
+    },
+    "iPhone19,4": {
+        "capacity": 4883,
+        "name": "iPhone Duo"
     },
     "iPhone19,7": {
         "capacity": 5335,
