@@ -1,6 +1,9 @@
 {
-    "version": 6,
+    "version": 7,
     "iPhone": {
+        "iPhone Duo系列": {
+            "iPhone Duo": "iPhone19,4"
+        },
         "iPhone 18系列": {
             "iPhone 18 Pro": "iPhone19,2",
             "iPhone 18 Pro Max (U.S.)": "iPhone19,3",
