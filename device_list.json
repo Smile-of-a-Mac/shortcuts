@@ -1,5 +1,5 @@
 {
-    "version": 7,
+    "version": 8,
     "iPhone": {
         "iPhone Duo系列": {
             "iPhone Duo": "iPhone19,4"
@@ -111,7 +111,9 @@
             "iPad mini (6th gen) Wi‑Fi": "iPad14,1",
             "iPad mini (6th gen) Wi‑Fi+Cellular": "iPad14,2",
             "iPad mini (A17 Pro) Wi‑Fi": "iPad16,1",
-            "iPad mini (A17 Pro) Wi‑Fi+Cellular": "iPad16,2"
+            "iPad mini (A17 Pro) Wi‑Fi+Cellular": "iPad16,2",
+            "iPad mini (A20 Pro) Wi‑Fi": "iPad19,1",
+            "iPad mini (A20 Pro) Wi‑Fi+Cellular": "iPad19,2"
         },
         "iPad Pro 系列": {
             "iPad Pro 11-inch (第1代) Wi‑Fi": "iPad8,1",
