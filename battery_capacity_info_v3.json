@@ -1,7 +1,7 @@
 {
-    "version": 42,
-    "up_info": "新增了iPhone Duo的机型及电池容量数据。",
-    "up_date": "2026-10-28",
+    "version": 43,
+    "up_info": "新增 iPad mini (A20 Pro) 的 Wi-Fi 版和蜂窝版，暂用 Apple 欧盟产品资料中的 4900 mAh 额定容量，设计容量待核实。",
+    "up_date": "2026-11-18",
     "source": "Smile of a Mac",
     "iPhone19,2": {
         "capacity": 4056,
@@ -306,6 +306,14 @@
     "iPad16,2": {
         "capacity": 5015,
         "name": "iPad mini (A17 Pro) (Wi-Fi+Cellular)"
+    },
+    "iPad19,1": {
+        "capacity": 4900,
+        "name": "iPad mini (A20 Pro) (Wi-Fi)"
+    },
+    "iPad19,2": {
+        "capacity": 4900,
+        "name": "iPad mini (A20 Pro) (Wi-Fi+Cellular)"
     },
     "iPad6,3": {
         "capacity": 7306,
